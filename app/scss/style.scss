@@ -1,0 +1,346 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+	width: 100%;
+	height: 90px;
+	padding: 20px 0 10px;
+	position: fixed;
+	transition: all 0.5s;
+	z-index: 50;
+	&.scrolling-active {
+		height: 70px;
+		padding: 10px;
+		background-color: #fff;
+		box-shadow: 10px 5px 10px $default;
+		.header__line {
+			background-color: $default;
+		}
+		.header__link {
+			color: $default;
+			&:hover {
+				color: $accent;
+			}
+		}
+		svg {
+			height: 50px;
+		}
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		svg {
+			width: 150px;
+			height: 65px;
+		}
+	}
+	&__list {
+		display: flex;
+		margin-left: 60px;
+	}
+	&__item {
+		margin-right: 40px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__link {
+		font-size: 28px;
+		line-height: 31px;
+		transition: all 0.5s;
+		opacity: 1;
+		@extend %marck-script;
+		&.header__link--active {
+			opacity: 1;
+		}
+		&:hover {
+			color: $accent;
+			font-size: 30px;
+		}
+	}
+	&__menu-toggle {
+		width: 50px;
+		height: 25px;
+		margin-right: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		display: none;
+		&:hover {
+			.header__line {
+				background-color: $accent;
+			}
+		}
+	}
+	&__btn {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		transition: all 0.5s;
+		position: relative;
+		cursor: pointer;
+	}
+	&__line {
+		width: 50px;
+		height: 3px;
+		background-color: #fff;
+		transition: all 0.3s;
+		&:nth-child(2) {
+			width: 40px;
+		}
+		&:nth-child(3) {
+			width: 30px;
+		}
+	}
+	&__btn--active .header__line {
+		&:nth-child(1) {
+			width: 40px;
+			transform: translateY(6px) rotate(45deg);
+		}
+		&:nth-child(2) {
+			opacity: 0;
+		}
+		&:nth-child(3) {
+			width: 40px;
+			transform: translateY(-10px) rotate(-45deg);
+		}
+	}
+}
+
+.central {
+	height: 100vh;
+	&__slider {
+		position: relative;
+	}
+	&__img {
+		width: 100%;
+		height: 100vh;
+		object-fit: cover;
+		filter: blur(1px);
+	}
+	&__item {
+		position: relative;
+	}
+	&__box {
+		position: absolute;
+		left: 100px;
+		top: 35%;
+		z-index: 10;
+	}
+	&__title {
+		max-width: 980px;
+		margin-bottom: 50px;
+		font-size: 90px;
+		line-height: 90px;
+		@extend %marck-script;
+	}
+	&__text {
+		max-width: 760px;
+		font-size: 40px;
+		@extend %marck-script;
+	}
+
+	.slick-arrow {
+		border: 0;
+		position: absolute;
+		top: 50%;
+		z-index: 5;
+		font-size: 0;
+		outline: none;
+		cursor: pointer;
+		background-color: transparent;
+		&:hover {
+			&:after {
+				transition: all 0.5s;
+				border-color: $hover;
+			}
+		}
+	}
+	.slick-next {
+		right: 35px;
+		padding: 75px 0 75px 75px;
+	}
+
+	.slick-prev {
+		left: 35px;
+		padding: 75px 75px 75px 0;
+	}
+
+	.slick-arrow:after {
+		content: " ";
+		display: block;
+		transform: translateY(-50%) rotate(45deg);
+		width: 30px;
+		height: 30px;
+		border: 3px solid;
+		border-color: $accent;
+		background: none;
+	}
+
+	.slick-next:after {
+		border-left: transparent;
+		border-bottom: transparent;
+	}
+
+	.slick-prev:after {
+		border-top: transparent;
+		border-right: transparent;
+	}
+
+	.slick-dots {
+		display: flex;
+		justify-content: center;
+		margin-top: -70px;
+		li {
+			padding: 0 5px;
+			line-height: 0;
+			button {
+				width: 40px;
+				height: 40px;
+				padding: 0;
+				font-size: 0;
+				outline: none;
+				cursor: pointer;
+				border-radius: 50%;
+				background-color: transparent;
+				border: 3px solid transparent;
+				position: relative;
+				box-shadow: 1px 1px $default;
+				&::before {
+					content: "";
+					position: absolute;
+					width: 7px;
+					height: 7px;
+					border-radius: 50%;
+					background-color: #fff;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			&.slick-active {
+				button {
+					border-color: $accent;
+					&::before {
+						background-color: $accent;
+					}
+				}
+			}
+		}
+	}
+}
+
+.price {
+	padding: 80px 0;
+	background-color: #f8f9fb;
+	&__items {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&__item {
+		max-width: 500px;
+		overflow: hidden;
+		margin-right: 30px;
+		position: relative;
+		border-radius: 5px;
+		background-color: #fff;
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+		&:hover {
+			transition: all 0.5s;
+			.price__item-text {
+				transform: translateY(0%);
+			}
+			.price__item-title {
+				opacity: 0;
+			}
+			.price__item-img {
+				filter: brightness(40%);
+			}
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__item-img {
+		border-radius: 5px 5px;
+		object-fit: cover;
+		filter: blur(1px);
+		height: 330px;
+	}
+	&__img-box {
+		position: relative;
+	}
+	&__item-title {
+		position: absolute;
+		bottom: 45px;
+		left: 20px;
+		right: 20px;
+		font-size: 50px;
+		@extend %marck-script;
+	}
+	&__box {
+		padding: 15px;
+		display: flex;
+		justify-content: space-between;
+		font-weight: 600;
+		color: $default;
+	}
+	&__item-link {
+		padding: 0 15px;
+		color: $title;
+	}
+	&__item-text {
+		padding: 0 20px;
+		font-size: 28px;
+		bottom: 70px;
+		position: absolute;
+		transition: all 0.8s;
+		transform: translateY(120%);
+		@extend %marck-script;
+	}
+}
+
+.footer {
+	padding: 40px 0;
+	background-color: #fff;
+	&__text {
+		text-align: center;
+		@extend %marck-script;
+		color: $default;
+		margin-bottom: 30px;
+	}
+	&__list-icons {
+		display: flex;
+		justify-content: center;
+	}
+	&__link-icon {
+		width: 20px;
+		height: 20px;
+		margin-right: 40px;
+		svg {
+			width: 35px;
+			height: 35px;
+			path {
+				fill: #000;
+			}
+		}
+		&:hover {
+			svg {
+				transform: scale(1.4);
+				path {
+					fill: $accent;
+				}
+			}
+		}
+	}
+}
+
+@import "media";

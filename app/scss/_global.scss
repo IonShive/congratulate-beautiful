@@ -1,0 +1,56 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	color: #fff;
+	font-size: 25px;
+	@extend %hairline-regular;
+}
+
+a {
+	color: #fff;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #c0c1c2;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: #c0c1c2;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #333;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.container-max {
+	max-width: 1630px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.title-box {
+	display: flex;
+	justify-content: center;
+}
+
+.title {
+	margin-bottom: 60px;
+	border-bottom: 1px solid $default;
+	font-size: 45px;
+	font-weight: 600;
+	color: $default;
+}
