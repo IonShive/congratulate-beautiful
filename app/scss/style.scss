@@ -123,7 +123,7 @@
 		width: 100%;
 		height: 100vh;
 		object-fit: cover;
-		filter: blur(1px);
+		filter: brightness(75%);
 	}
 	&__item {
 		position: relative;
@@ -238,17 +238,16 @@
 }
 
 .price {
-	padding: 80px 0;
-	background-color: #f8f9fb;
+	padding: 80px 0 40px;
 	&__items {
 		display: flex;
-		justify-content: center;
 		flex-wrap: wrap;
 	}
 	&__item {
 		max-width: 500px;
 		overflow: hidden;
 		margin-right: 30px;
+		margin-bottom: 40px;
 		position: relative;
 		border-radius: 5px;
 		background-color: #fff;
@@ -272,8 +271,9 @@
 	&__item-img {
 		border-radius: 5px 5px;
 		object-fit: cover;
-		filter: blur(1px);
+		filter: brightness(75%);
 		height: 330px;
+		width: 500px;
 	}
 	&__img-box {
 		position: relative;
@@ -303,14 +303,97 @@
 		bottom: 70px;
 		position: absolute;
 		transition: all 0.8s;
-		transform: translateY(120%);
+		transform: translateY(200%);
 		@extend %marck-script;
+	}
+}
+
+.contacts {
+	padding: 80px 0;
+	&__form-title {
+		margin: 0 auto 30px;
+		max-width: 500px;
+		color: $default;
+		@extend %roboto-400;
+	}
+	&__form {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	&__form-box {
+		margin-bottom: 15px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__form-input {
+		max-width: 375px;
+		width: 100%;
+		height: 60px;
+		padding: 15px;
+		margin-right: 10px;
+		border: none;
+		border-radius: 3px;
+		background-color: #f8f9fb;
+		box-shadow: 0 4px 16px #ccc;
+
+		&:last-child {
+			margin-right: 0;
+		}
+		&::placeholder {
+			font-size: 20px;
+			@extend %roboto-400;
+		}
+	}
+	&__form-textarea {
+		max-width: 100%;
+		height: 120px;
+		padding: 15px;
+		margin-bottom: 15px;
+		border: none;
+		resize: none;
+		border-radius: 3px;
+		background-color: #f8f9fb;
+		box-shadow: 0 4px 16px #ccc;
+		&::placeholder {
+			font-size: 20px;
+			@extend %roboto-400;
+		}
+	}
+	&__form-btn {
+		width: 640px;
+		height: 60px;
+		margin-left: auto;
+		border: none;
+		border-radius: 5px;
+		background-color: $accent;
+		color: #fff;
+		box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.5);
+		@extend %roboto-400;
+	}
+	&__box {
+		margin-top: -50px;
+		display: flex;
+		flex-direction: column;
+		color: $default;
+		margin-right: auto;
+		@extend %roboto-400;
+	}
+	&__adrres,
+	&__email,
+	&__tel {
+		display: inline-block;
+		margin-bottom: 20px;
+		color: inherit;
+	}
+	&__email-span,
+	&__tel-span {
+		color: $title;
 	}
 }
 
 .footer {
 	padding: 40px 0;
-	background-color: #fff;
 	&__text {
 		text-align: center;
 		@extend %marck-script;
