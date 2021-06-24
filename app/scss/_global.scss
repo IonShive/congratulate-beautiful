@@ -7,7 +7,7 @@ body {
 	color: #fff;
 	font-size: 25px;
 	background-color: #f8f9fb;
-	@extend %hairline-regular;
+	@extend %roboto-400;
 }
 
 a {
@@ -52,6 +52,7 @@ a {
 	margin-bottom: 60px;
 	border-bottom: 1px solid $accent;
 	font-size: 45px;
-	font-weight: 600;
+	font-weight: 400;
 	color: $accent;
+	@extend %roboto-400;
 }
