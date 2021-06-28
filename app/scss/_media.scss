@@ -1,3 +1,14 @@
+@media (max-width: 1400px) {
+	.price {
+		&__item-title {
+			font-size: 40px;
+		}
+		&__item-text {
+			font-size: 23px;
+		}
+	}
+}
+
 @media (max-width: 1200px) {
 	.header {
 		&__wrapper {
@@ -37,6 +48,19 @@
 		}
 		&__box-subtitle {
 			font-size: 35px;
+		}
+	}
+
+	.price {
+		&__items {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		&__item {
+			max-width: 575px;
+		}
+		&__item-img {
+			max-width: 575px;
+			width: 100%;
 		}
 	}
 }
@@ -159,12 +183,33 @@
 			font-size: 34px;
 		}
 	}
+
+	.price {
+		&__items {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		&__item {
+			max-width: 750px;
+		}
+		&__item-title {
+			font-size: 50px;
+		}
+		&__item-img {
+			max-width: 750px;
+			width: 100%;
+		}
+		&__item-text {
+			font-size: 27px;
+			transform: translateY(-300%);
+		}
+	}
 }
 
 @media (max-width: 540px) {
 	.title {
 		font-size: 35px;
 	}
+
 	.header {
 		&__list {
 			width: 165px;
@@ -211,6 +256,7 @@
 	}
 
 	.about {
+		padding: 60px 0 30px;
 		&__box-img {
 			height: 350px;
 			&::after {
@@ -225,6 +271,24 @@
 		}
 		&__box-text {
 			font-size: 18px;
+		}
+	}
+
+	.price {
+		padding: 30px 0;
+		&__item-title {
+			font-size: 35px;
+		}
+		&__item-text {
+			font-size: 20px;
+		}
+		&__item-price {
+			margin-bottom: 5px;
+			font-size: 20px;
+		}
+		&__item-link {
+			margin-left: auto;
+			font-size: 20px;
 		}
 	}
 

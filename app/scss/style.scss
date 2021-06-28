@@ -328,6 +328,77 @@
 	}
 }
 
+.price {
+	padding: 80px 0;
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 40px 20px;
+	}
+	&__item {
+		max-width: 500px;
+		overflow: hidden;
+		position: relative;
+		border-radius: 5px;
+		background-color: #fff;
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+		&:hover {
+			transition: all 0.5s;
+			.price__item-text {
+				transform: translateY(0%);
+			}
+			.price__item-title {
+				opacity: 0;
+			}
+			.price__item-img {
+				filter: brightness(40%);
+			}
+		}
+	}
+	&__item-img {
+		border-radius: 5px 5px;
+		object-fit: cover;
+		filter: brightness(60%);
+		height: 330px;
+		width: 500px;
+	}
+	&__img-box {
+		position: relative;
+	}
+	&__item-title {
+		position: absolute;
+		bottom: 45px;
+		left: 20px;
+		right: 20px;
+		font-size: 45px;
+		@extend %marck-script;
+	}
+	&__box {
+		padding: 15px;
+		display: flex;
+		justify-content: space-between;
+		font-weight: 600;
+		color: $default;
+	}
+	&__item-link {
+		padding: 0 15px;
+		color: $title;
+		&:hover {
+			transform: scale(1.1);
+			transition: all 0.5s;
+		}
+	}
+	&__item-text {
+		padding: 0 20px;
+		font-size: 25px;
+		bottom: 70px;
+		position: absolute;
+		transition: all 0.8s;
+		transform: translateY(-250%);
+		@extend %marck-script;
+	}
+}
+
 .gallery {
 	padding: 60px 0;
 	&__subtitle {
@@ -411,77 +482,6 @@
 	&__box {
 		max-width: 540px;
 		color: $default;
-	}
-}
-
-.price {
-	padding: 80px 0;
-	&__items {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 40px 20px;
-	}
-	&__item {
-		max-width: 500px;
-		overflow: hidden;
-		position: relative;
-		border-radius: 5px;
-		background-color: #fff;
-		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-		&:hover {
-			transition: all 0.5s;
-			.price__item-text {
-				transform: translateY(0%);
-			}
-			.price__item-title {
-				opacity: 0;
-			}
-			.price__item-img {
-				filter: brightness(40%);
-			}
-		}
-	}
-	&__item-img {
-		border-radius: 5px 5px;
-		object-fit: cover;
-		filter: brightness(60%);
-		height: 330px;
-		width: 500px;
-	}
-	&__img-box {
-		position: relative;
-	}
-	&__item-title {
-		position: absolute;
-		bottom: 45px;
-		left: 20px;
-		right: 20px;
-		font-size: 50px;
-		@extend %marck-script;
-	}
-	&__box {
-		padding: 15px;
-		display: flex;
-		justify-content: space-between;
-		font-weight: 600;
-		color: $default;
-	}
-	&__item-link {
-		padding: 0 15px;
-		color: $title;
-		&:hover {
-			transform: scale(1.1);
-			transition: all 0.5s;
-		}
-	}
-	&__item-text {
-		padding: 0 20px;
-		font-size: 25px;
-		bottom: 70px;
-		position: absolute;
-		transition: all 0.8s;
-		transform: translateY(-200%);
-		@extend %marck-script;
 	}
 }
 
