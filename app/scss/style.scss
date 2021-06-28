@@ -136,13 +136,14 @@
 	}
 	&__title {
 		max-width: 980px;
+		padding-right: 40px;
 		margin-bottom: 40px;
 		font-size: 60px;
-		line-height: 60px;
 		@extend %marck-script;
 	}
 	&__text {
 		max-width: 760px;
+		padding-right: 40px;
 		margin-bottom: 20px;
 		font-size: 30px;
 		@extend %marck-script;
@@ -530,7 +531,7 @@
 				transition: all 0.5s;
 			}
 			.portfolio__item-img {
-				filter: brightness(40%);
+				filter: brightness(100%);
 			}
 		}
 	}
@@ -550,43 +551,29 @@
 		flex-direction: column;
 		color: $default;
 	}
+	&__inner {
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 	&__tag {
-		margin-bottom: 5px;
 		font-size: 13px;
 		color: #3333337a;
+	}
+	&__link {
+		font-size: 20px;
+		font-weight: 600;
+		padding: 0 15px;
+		color: $title;
+		&:hover {
+			transform: scale(1.1);
+			transition: all 0.5s;
+		}
 	}
 	&__item-name {
 		font-size: 17px;
 		font-weight: 600;
-	}
-	&__item-icon {
-		padding: 0 20px;
-		font-size: 25px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		transition: all 0.5s;
-		cursor: pointer;
-		opacity: 0;
-		svg {
-			width: 50px;
-			height: 50px;
-			transition: all 0.5s;
-			path {
-				fill: #fff;
-			}
-		}
-		&:hover {
-			svg {
-				transition: all 0.5s;
-				transform: scale(1.2);
-			}
-		}
 	}
 	&__text {
 		margin-top: 5px;
