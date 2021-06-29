@@ -30,8 +30,8 @@ $(function () {
 		speed: 500,
 		dots: true,
 		infinite: true,
-		// autoplay: true,
-		// autoplaySpeed: 3000,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		responsive: [
 			{
 				breakpoint: 1201,

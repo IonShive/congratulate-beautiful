@@ -202,7 +202,7 @@
 
 	.sentence {
 		&__box {
-			max-width: 310px;
+			max-width: 400px;
 		}
 		&__box-subtitle {
 			margin-bottom: 20px;
@@ -493,28 +493,31 @@
 
 	.central {
 		&__title {
-			font-size: 20px;
+			font-size: 25px;
+			padding-right: 0;
+			margin-bottom: 15px;
 		}
 		&__img {
 			height: 525px;
 		}
 		&__box {
-			top: 180px;
+			max-width: 290px;
+			top: 140px;
 			left: 15px;
 		}
 		&__text {
-			padding-right: 15px;
-			font-size: 14px;
+			padding-right: 0px;
+			font-size: 16px;
 		}
 		&__link {
 			font-size: 18px;
 		}
 		.slick-dots {
-			margin-top: -55px;
+			margin-top: -50px;
 		}
 		.slick-dots li button {
-			width: 30px;
-			height: 30px;
+			width: 25px;
+			height: 25px;
 		}
 	}
 
