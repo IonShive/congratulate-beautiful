@@ -4,6 +4,43 @@
 @import "libs";
 @import "global";
 
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	background: #e0e0e0;
+	z-index: 100;
+	&__image {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		width: 70px;
+		height: 70px;
+		margin-top: -35px;
+		margin-left: -35px;
+		text-align: center;
+		animation: preloader-rotate 2s infinite linear;
+	}
+}
+
+.loaded_hiding .preloader {
+	transition: 0.3s opacity;
+	opacity: 0;
+}
+
+.loaded .preloader {
+	display: none;
+}
+
+@keyframes preloader-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 .header {
 	width: 100%;
 	height: 90px;
@@ -286,7 +323,7 @@
 }
 
 .about {
-	padding: 70px 0 40px;
+	padding: 80px 0 40px;
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -602,12 +639,12 @@
 		margin: 0 auto 30px;
 		max-width: 500px;
 		color: $default;
-		@extend %roboto-400;
 	}
 	&__form {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+		position: relative;
 	}
 	&__form-box {
 		margin-bottom: 15px;
@@ -625,14 +662,12 @@
 		background-color: #e8e8e8;
 		font-size: 25px;
 		color: $default;
-		@extend %roboto-400;
 		&:last-child {
 			margin-right: 0;
 		}
 		&::placeholder {
 			font-size: 20px;
 			color: $default;
-			@extend %roboto-400;
 		}
 	}
 	&__form-textarea {
@@ -646,12 +681,14 @@
 		background-color: #e8e8e8;
 		font-size: 25px;
 		color: $default;
-		@extend %roboto-400;
 		&::placeholder {
 			font-size: 20px;
 			color: $default;
-			@extend %roboto-400;
 		}
+	}
+	&__form-inner {
+		display: flex;
+		justify-content: space-between;
 	}
 	&__form-btn {
 		width: 480px;
@@ -663,36 +700,170 @@
 		background-color: $accent;
 		transition: all 0.5s;
 		color: #fff;
-		@extend %roboto-400;
 		&:hover {
 			transform: scale(1.1);
 			transition: all 0.5s;
 		}
 	}
+	&__file-container {
+		width: 260px;
+		position: relative;
+	}
+	&__file-trigger {
+		display: block;
+		padding: 15px 45px;
+		transition: all 0.5s;
+		font-size: 20px;
+		cursor: pointer;
+		color: #fff;
+		text-align: center;
+		background: $default;
+	}
+	&__file {
+		width: 260px;
+		padding: 15px 0;
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+	}
+	&__file:hover + .contacts__file-trigger,
+	&__file:focus + .contacts__file-trigger,
+	&__file-trigger:hover,
+	&__file-trigger:focus {
+		background-color: #34495e;
+		color: #39d2b4;
+	}
+	&__file-return {
+		margin: 0;
+		color: $default;
+	}
+	&__file-return:not(:empty) {
+		margin: 20px 0 10px;
+	}
+	&__file-return {
+		font-size: 20px;
+		font-weight: bold;
+		font-style: italic;
+	}
+	&__file-return:not(:empty):before {
+		content: "Выбранный файл: ";
+		font-weight: normal;
+		font-style: normal;
+	}
+	&__file-return.contacts__file-return--passive {
+		display: none;
+	}
 	&__box {
-		margin-top: -50px;
+		max-width: 480px;
+		margin-top: 30px;
 		display: flex;
 		flex-direction: column;
 		color: $default;
 		margin-right: auto;
-		@extend %roboto-400;
 	}
 	&__adrres,
 	&__email,
 	&__tel {
-		display: inline-block;
+		display: inline;
 		margin-bottom: 20px;
 		color: inherit;
 	}
 	&__email-span,
 	&__tel-span {
-		display: inline-block;
+		display: inline;
 		transition: all 0.5s;
 		color: $title;
 		&:hover {
 			transition: all 0.5s;
 			color: $hover;
 		}
+	}
+	&__item-title {
+		max-width: 450px;
+		margin: 30px auto;
+		font-weight: 400;
+		font-size: 30px;
+		color: $default;
+		@extend %marck-script;
+	}
+	&__item-span {
+		color: $default;
+		font-weight: 600;
+	}
+	&__sentence {
+		background-color: $default;
+	}
+	&__items {
+		padding: 40px 0;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 35px;
+		svg {
+			width: 50px;
+			height: 50px;
+			path {
+				fill: #fff;
+			}
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__text {
+		max-width: 190px;
+		margin-left: 20px;
+		font-size: 18px;
+	}
+	&__item-link {
+		display: inline-block;
+		transition: all 0.5s;
+		color: $title;
+		&:hover {
+			transition: all 0.5s;
+			transform: scale(1.1);
+		}
+	}
+	&__pop-up {
+		width: 260px;
+		height: 60px;
+		padding: 5px 15px;
+		position: fixed;
+		align-items: center;
+		top: 115px;
+		right: 25px;
+		color: #fff;
+		background-color: $default;
+		border-radius: 5px;
+		z-index: 5;
+		display: flex;
+		transition: all 0.5s;
+		transform: translateX(250%);
+	}
+	&__pop-up.contacts__pop-up--active {
+		transition: all 0.5s;
+		transform: translateX(0);
+	}
+	&__text-send {
+		font-size: 15px;
+	}
+	&__close {
+		font-size: 25px;
+		cursor: pointer;
+		&:hover {
+			color: $title;
+		}
+	}
+	#name-error,
+	#email-error,
+	#tel-error {
+		display: none !important;
 	}
 }
 
@@ -718,14 +889,12 @@
 		font-size: 28px;
 		font-weight: 600;
 		color: $default;
-		@extend %roboto-400;
 	}
 	&__list-item {
 		margin-bottom: 5px;
 	}
 	&__list-link {
 		font-size: 24px;
-		@extend %roboto-400;
 		color: $default;
 	}
 	&__list-wrapper {
@@ -757,7 +926,6 @@
 		margin-bottom: 20px;
 		font-weight: 600;
 		color: $default;
-		@extend %roboto-400;
 	}
 	&__box-img {
 		display: flex;

@@ -14,6 +14,7 @@ body {
 
 a {
 	color: #fff;
+	@extend %roboto-400;
 }
 
 ::-webkit-scrollbar-track {
