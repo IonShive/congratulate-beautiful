@@ -74,6 +74,9 @@
 		svg {
 			width: 150px;
 			height: 65px;
+			&:first-child {
+				width: 60px;
+			}
 		}
 	}
 	&__list {
@@ -526,7 +529,8 @@
 .portfolio {
 	padding: 60px 0;
 	&__buttons {
-		margin-bottom: 40px;
+		max-width: 700px;
+		margin: 0 auto 40px;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
@@ -579,19 +583,20 @@
 		height: 240px;
 		object-fit: cover;
 		border-radius: 5px 5px;
-		filter: brightness(85%);
+		filter: brightness(90%);
 	}
 	&__img-box {
 		position: relative;
 	}
 	&__box {
 		padding: 15px;
+		padding: 10px 15px 5px;
 		display: flex;
 		flex-direction: column;
 		color: $default;
 	}
 	&__inner {
-		margin-top: 10px;
+		margin-top: 5px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -601,7 +606,9 @@
 		color: #3333337a;
 	}
 	&__link {
-		font-size: 20px;
+		display: inline-block;
+		margin: -15px 0 0 auto;
+		font-size: 21px;
 		font-weight: 600;
 		padding: 0 15px;
 		color: $title;
@@ -611,13 +618,13 @@
 		}
 	}
 	&__item-name {
-		font-size: 17px;
+		font-size: 18px;
 		font-weight: 600;
 		height: 40px;
 	}
 	&__text {
-		margin-top: 5px;
-		margin-left: 15px;
+		font-size: 30px;
+		margin: 0 0 10px 15px;
 		color: $default;
 		@extend %marck-script;
 	}
@@ -625,6 +632,7 @@
 		display: inline-block;
 		transition: all 0.5s;
 		color: $title;
+		@extend %marck-script;
 		&:hover {
 			transition: all 0.5s;
 			transform: scale(1.1);
@@ -687,6 +695,7 @@
 		}
 	}
 	&__form-inner {
+		margin-bottom: 30px;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -757,7 +766,7 @@
 	}
 	&__box {
 		max-width: 480px;
-		margin-top: 30px;
+		margin-bottom: 50px;
 		display: flex;
 		flex-direction: column;
 		color: $default;
@@ -782,7 +791,7 @@
 	}
 	&__item-title {
 		max-width: 450px;
-		margin: 30px auto;
+		margin: 0 auto 20px;
 		font-weight: 400;
 		font-size: 30px;
 		color: $default;
@@ -877,8 +886,11 @@
 	&__list {
 		svg {
 			width: 150px;
-			height: 70px;
+			height: 65px;
 			margin-bottom: 20px;
+			&:first-child {
+				width: 60px;
+			}
 		}
 		&:first-child {
 			margin-top: -40px;

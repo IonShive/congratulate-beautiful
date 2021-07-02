@@ -53,9 +53,6 @@ $(function () {
 	var mixer = mixitup('.portfolio__items', {
 		animation: {
 			duration: 500,
-			nudge: false,
-			reverseOut: false,
-			effects: "fade"
 		}
 	});
 
