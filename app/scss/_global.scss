@@ -59,3 +59,7 @@ a {
 	color: $accent;
 	@extend %roboto-400;
 }
+
+.logo {
+	display: flex;
+}

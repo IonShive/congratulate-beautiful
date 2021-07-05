@@ -1,10 +1,30 @@
 @media (max-width: 1400px) {
+	.header {
+		&__link {
+			font-size: 27px;
+		}
+	}
+
 	.price {
 		&__item-title {
 			font-size: 40px;
 		}
 		&__item-text {
 			font-size: 23px;
+		}
+	}
+
+	.portfolio {
+		&__item-name {
+			font-size: 14px;
+		}
+		&__inner {
+			height: 25px;
+			margin-top: 5px;
+		}
+		&__link {
+			margin-top: 0px;
+			font-size: 20px;
 		}
 	}
 
@@ -24,7 +44,7 @@
 			}
 		}
 		&__link {
-			font-size: 23px;
+			font-size: 19px;
 		}
 	}
 
@@ -96,11 +116,31 @@
 	}
 
 	.portfolio {
+		&__item {
+			height: 300px;
+		}
 		&__item-img {
 			height: 200px;
 		}
+		&__inner {
+			margin-top: 15px;
+		}
 		&__tag {
 			font-size: 9px;
+		}
+	}
+
+	.contacts {
+		&__item {
+			margin-right: 15px;
+			svg {
+				width: 30px;
+				height: 30px;
+			}
+		}
+		&__text {
+			font-size: 15px;
+			margin-left: 10px;
 		}
 	}
 
@@ -141,6 +181,9 @@
 			font-size: 28px;
 			opacity: 0;
 		}
+		&__link--btn {
+			padding: 0;
+		}
 		&__list {
 			height: 350px;
 			width: 230px;
@@ -163,6 +206,10 @@
 			}
 			.header__list.header__list--active {
 				right: -25px;
+			}
+			.header__link--btn {
+				background-color: transparent;
+				color: $default;
 			}
 		}
 	}
@@ -218,15 +265,38 @@
 		}
 		&__item {
 			max-width: 465px;
+			height: 275px;
 		}
 		&__item-name {
 			height: 20px;
+			font-size: 18px;
 		}
 	}
 
 	.contacts {
 		&__box {
 			margin-top: 20px;
+		}
+		&__form-btn {
+			max-width: 450px;
+		}
+		&__items {
+			padding: 40px 40px;
+			display: grid;
+			grid-gap: 15px;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		&__item {
+			margin: 0;
+			justify-content: flex-start;
+			svg {
+				width: 35px;
+				height: 35px;
+			}
+		}
+		&__text {
+			max-width: 280px;
+			font-size: 18px;
 		}
 	}
 
@@ -264,6 +334,7 @@
 		}
 		&__item {
 			max-width: 750px;
+			width: 100%;
 			margin: 0;
 			margin-bottom: 50px;
 			&:last-child {
@@ -393,6 +464,7 @@
 		}
 		&__item {
 			max-width: 750px;
+			height: 410px;
 		}
 		&__item-img {
 			max-width: 750px;
@@ -400,8 +472,11 @@
 			height: 320px;
 			filter: brightness(90%);
 		}
+		&__inner {
+			margin-top: 30px;
+		}
 		&__item-name {
-			font-size: 20px;
+			font-size: 22px;
 		}
 		&__tag {
 			font-size: 15px;
@@ -421,17 +496,43 @@
 			margin-bottom: 10px;
 			margin-right: 0;
 		}
+		&__form-inner {
+			flex-direction: column;
+		}
+		&__wrapper {
+			margin-bottom: 20px;
+		}
 		&__form-btn {
 			max-width: 510px;
 			width: 100%;
+		}
+		&__items {
+			padding: 30px 0;
+		}
+		&__item {
+			svg {
+				width: 30px;
+				height: 30px;
+			}
+		}
+		&__text {
+			font-size: 14px;
+		}
+	}
+
+	.reviews {
+		&__slider-img {
+			height: 640px;
 		}
 	}
 
 	.info {
 		&__list {
 			svg {
-				width: 110px;
 				height: 50px;
+			}
+			#logo-text {
+				display: none;
 			}
 		}
 		&__list-title {
@@ -471,6 +572,12 @@
 @media (max-width: 540px) {
 	.title {
 		font-size: 35px;
+	}
+
+	.logo {
+		#logo-text {
+			display: none;
+		}
 	}
 
 	.header {
@@ -597,6 +704,9 @@
 		&__btn {
 			font-size: 15px;
 		}
+		&__item {
+			height: 435px;
+		}
 		&__item-img {
 			height: 300px;
 		}
@@ -606,6 +716,9 @@
 		&__text {
 			margin-left: 0;
 			font-size: 20px;
+		}
+		&__inner {
+			margin-top: 45px;
 		}
 	}
 
@@ -623,6 +736,39 @@
 		&__email-span,
 		&__tel-span {
 			font-size: 20px;
+		}
+		&__items {
+			grid-template-columns: repeat(1, 1fr);
+			grid-gap: 20px;
+		}
+		&__item {
+			svg {
+				width: 40px;
+				height: 35px;
+			}
+		}
+		&__text {
+			max-width: 100%;
+			font-size: 18px;
+		}
+	}
+
+	.reviews {
+		padding-top: 30px;
+		&__slider {
+			.slick-arrow:after {
+				width: 20px;
+				height: 20px;
+			}
+			.slick-prev {
+				left: 15px;
+			}
+			.slick-next {
+				right: 15px;
+			}
+		}
+		&__slider-img {
+			height: 370px;
 		}
 	}
 

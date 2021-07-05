@@ -50,6 +50,15 @@ $(function () {
 		]
 	});
 
+	$('.reviews__slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		speed: 800,
+		infinite: true,
+		// autoplay: true,
+		// autoplaySpeed: 3000,
+	});
+
 	var mixer = mixitup('.portfolio__items', {
 		animation: {
 			duration: 500,
