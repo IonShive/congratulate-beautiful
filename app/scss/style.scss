@@ -120,8 +120,8 @@
 			opacity: 1;
 		}
 		&:hover {
+			transition: all 0.5s;
 			color: $accent;
-			font-size: 30px;
 		}
 	}
 	&__link--btn {

@@ -9,9 +9,6 @@ $(function () {
 	}
 
 	$('.header__btn').on('click', function () {
-		// $('.header__btn').toggleClass('header__btn--active');
-		// $('.header__link').toggleClass('header__link--active');
-		// $('.header__list').toggleClass('header__list--active');
 		$('.header__toggle-wrapper').toggleClass('header__toggle-wrapper--active');
 	});
 
