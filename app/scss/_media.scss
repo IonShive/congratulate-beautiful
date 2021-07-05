@@ -1,10 +1,12 @@
 @media (max-width: 1400px) {
 	.header {
-		&__link {
-			font-size: 27px;
+		&__toggle-title {
+			font-size: 35px;
+		}
+		&__toggle-link {
+			font-size: 18px;
 		}
 	}
-
 	.price {
 		&__item-title {
 			font-size: 40px;
@@ -43,8 +45,11 @@
 				height: 60px;
 			}
 		}
+		&__item {
+			margin-right: 20px;
+		}
 		&__link {
-			font-size: 19px;
+			font-size: 17px;
 		}
 	}
 
@@ -168,49 +173,15 @@
 	.header {
 		&__wrapper {
 			justify-content: space-between;
-			position: relative;
-		}
-		&__menu-toggle {
-			display: flex;
-		}
-		&__item {
-			margin-right: 0;
-			margin-bottom: 10px;
-		}
-		&__link {
-			font-size: 28px;
-			opacity: 0;
-		}
-		&__link--btn {
-			padding: 0;
 		}
 		&__list {
-			height: 350px;
-			width: 230px;
-			flex-direction: column;
-			position: absolute;
-			bottom: -270px;
-			right: -260px;
-			order: 1;
-			transition: all 0.5s;
-			background-color: $default;
+			display: none;
 		}
-		&__list.header__list--active {
-			padding: 90px 20px 15px;
-			right: -15px;
-			transition: all 0.5s;
+		&__toggle-wrapper {
+			width: 40%;
 		}
-		&.scrolling-active {
-			.header__list {
-				background-color: #fff;
-			}
-			.header__list.header__list--active {
-				right: -25px;
-			}
-			.header__link--btn {
-				background-color: transparent;
-				color: $default;
-			}
+		&__list-toggle--navigation {
+			display: block;
 		}
 	}
 
@@ -359,6 +330,12 @@
 @media (max-width: 780px) {
 	.title {
 		font-size: 35px;
+	}
+
+	.header {
+		&__toggle-wrapper {
+			width: 50%;
+		}
 	}
 
 	.central {
@@ -581,20 +558,8 @@
 	}
 
 	.header {
-		&__list {
-			width: 165px;
-			height: 340px;
-			bottom: -260px;
-			right: -190px;
-		}
-		&__item {
-			margin-bottom: 5px;
-		}
-		&__link {
-			font-size: 20px;
-			&:hover {
-				font-size: 23px;
-			}
+		&__toggle-wrapper {
+			width: 100%;
 		}
 	}
 

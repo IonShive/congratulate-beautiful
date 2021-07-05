@@ -68,8 +68,20 @@
 			}
 		}
 		.header__link--btn {
-			color: #fff;
-			background-color: $default;
+			color: $hover;
+			border: 1px solid $default;
+			box-shadow: 0px 3px 3px $default;
+		}
+		.header__toggle-wrapper {
+			background-color: #fff;
+			padding: 15px;
+			top: 70px;
+		}
+		.header__toggle-title {
+			color: $default;
+		}
+		.header__toggle-link {
+			color: $default;
 		}
 		svg {
 			height: 50px;
@@ -99,7 +111,7 @@
 		}
 	}
 	&__link {
-		font-size: 28px;
+		font-size: 22px;
 		line-height: 31px;
 		transition: all 0.5s;
 		opacity: 1;
@@ -113,18 +125,20 @@
 		}
 	}
 	&__link--btn {
-		padding: 5px 15px;
-		border-radius: 15px;
+		padding: 5px 10px;
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 20px;
 	}
 	&__menu-toggle {
 		width: 50px;
 		height: 25px;
-		margin-right: 60px;
+		margin: 0 60px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		display: none;
+		z-index: 50;
 		&:hover {
 			.header__line {
 				background-color: $accent;
@@ -165,6 +179,47 @@
 			width: 40px;
 			transform: translateY(-10px) rotate(-45deg);
 		}
+	}
+	&__toggle-wrapper {
+		width: 25%;
+		height: 100vh;
+		padding: 70px 15px 15px 15px;
+		position: absolute;
+		top: 70px;
+		top: 0;
+		right: 0;
+		overflow: auto;
+		transition: all 0.5s;
+		transform: translateX(250%);
+		background-color: $default;
+		box-shadow: 0 10px 7px 3px $default;
+		z-index: 5;
+	}
+	&__toggle-wrapper.header__toggle-wrapper--active {
+		transition: all 0.5s;
+		transform: translateX(0%);
+	}
+	&__list-toggle {
+		margin-bottom: 40px;
+	}
+	&__list-toggle--navigation {
+		display: none;
+	}
+	&__toggle-title {
+		margin-bottom: 20px;
+		font-size: 40px;
+		color: #fff;
+		@extend %marck-script;
+	}
+	&__toggle-item {
+		margin-bottom: 15px;
+		margin-left: 20px;
+	}
+	&__toggle-link {
+		padding-bottom: 5px;
+		font-size: 20px;
+		color: #fff;
+		border-bottom: 1px solid $default;
 	}
 }
 

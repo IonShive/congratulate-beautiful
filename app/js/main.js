@@ -9,9 +9,10 @@ $(function () {
 	}
 
 	$('.header__btn').on('click', function () {
-		$('.header__btn').toggleClass('header__btn--active');
-		$('.header__link').toggleClass('header__link--active');
-		$('.header__list').toggleClass('header__list--active');
+		// $('.header__btn').toggleClass('header__btn--active');
+		// $('.header__link').toggleClass('header__link--active');
+		// $('.header__list').toggleClass('header__list--active');
+		$('.header__toggle-wrapper').toggleClass('header__toggle-wrapper--active');
 	});
 
 	$(".header__link").on("click", function (event) {
@@ -55,8 +56,8 @@ $(function () {
 		slidesToScroll: 1,
 		speed: 800,
 		infinite: true,
-		// autoplay: true,
-		// autoplaySpeed: 3000,
+		autoplay: true,
+		autoplaySpeed: 3000,
 	});
 
 	var mixer = mixitup('.portfolio__items', {
