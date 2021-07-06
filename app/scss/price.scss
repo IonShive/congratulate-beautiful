@@ -258,66 +258,6 @@
     }
 }
 
-.poems {
-    padding: 60px 0 60px;
-    &__buttons {
-        max-width: 900px;
-        margin: 0 auto 80px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        color: $default;
-    }
-    &__btn {
-        padding: 10px 20px;
-        margin: 5px;
-        border: none;
-        font-size: 20px;
-        transition: all 0.3s;
-        background-color: #e5e5e5;
-        text-transform: uppercase;
-        font-family: "Montserrat", sans-serif;
-        &:hover {
-            transition: all 0.3s;
-            background-color: $title;
-            color: #fff;
-        }
-    }
-    .mixitup-control-active {
-        transition: all 0.3s;
-        background-color: $title;
-        color: #fff;
-    }
-    &__item {
-        max-width: 400px;
-        margin: 0 auto 60px;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    &__item-title {
-        margin-bottom: 20px;
-        font-size: 30px;
-        text-align: center;
-        color: $default;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-    }
-    &__item-text {
-        margin-bottom: 10px;
-        color: $default;
-        font-family: "Montserrat", sans-serif;
-    }
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        font-size: 20px;
-        color: #e0e0e0;
-        font-family: "Montserrat", sans-serif;
-        border-bottom: 1px solid #e0e0e0;
-    }
-}
-
 .contacts {
     padding: 60px 0;
     &__form-title {

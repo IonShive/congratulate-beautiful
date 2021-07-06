@@ -258,8 +258,8 @@
     }
 }
 
-.poems {
-    padding: 60px 0 60px;
+.proshow {
+    padding: 60px 0;
     &__buttons {
         max-width: 900px;
         margin: 0 auto 80px;
@@ -276,7 +276,6 @@
         transition: all 0.3s;
         background-color: #e5e5e5;
         text-transform: uppercase;
-        font-family: "Montserrat", sans-serif;
         &:hover {
             transition: all 0.3s;
             background-color: $title;
@@ -288,33 +287,59 @@
         background-color: $title;
         color: #fff;
     }
+    &__items {
+    }
     &__item {
-        max-width: 400px;
+        max-width: 800px;
         margin: 0 auto 60px;
-        &:last-child {
-            margin-bottom: 0;
-        }
+        color: $default;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
     }
-    &__item-title {
+    &__item-img {
+        max-width: 800px;
+        width: 100%;
         margin-bottom: 20px;
-        font-size: 30px;
-        text-align: center;
-        color: $default;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
+        border-radius: 10px 10px 0 0;
     }
-    &__item-text {
-        margin-bottom: 10px;
-        color: $default;
-        font-family: "Montserrat", sans-serif;
-    }
-    &__inner {
+    &__item-box {
+        padding: 0 15px;
+        margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+    &__item-title {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    &__item-tag {
         font-size: 20px;
         color: #e0e0e0;
-        font-family: "Montserrat", sans-serif;
-        border-bottom: 1px solid #e0e0e0;
+    }
+    &__item-text {
+        padding: 0 15px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    &__item-inner {
+        padding: 0 15px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item-price {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    &__item-link {
+        padding: 0 15px;
+        font-size: 27px;
+        color: $title;
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.5s;
+        }
     }
 }
 

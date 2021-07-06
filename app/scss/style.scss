@@ -67,11 +67,6 @@
 				color: $accent;
 			}
 		}
-		.header__link--btn {
-			color: $hover;
-			border: 1px solid $default;
-			box-shadow: 0px 3px 3px $default;
-		}
 		.header__toggle-wrapper {
 			background-color: #fff;
 			padding: 15px;
@@ -123,12 +118,6 @@
 			transition: all 0.5s;
 			color: $accent;
 		}
-	}
-	&__link--btn {
-		padding: 5px 10px;
-		border-radius: 10px;
-		font-weight: 600;
-		font-size: 20px;
 	}
 	&__menu-toggle {
 		width: 50px;
