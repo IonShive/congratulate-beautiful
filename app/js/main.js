@@ -1,5 +1,6 @@
 $(function () {
 
+	// HEADER //
 	window.onload = function () {
 		document.body.classList.add('loaded_hiding');
 		window.setTimeout(function () {
@@ -25,10 +26,12 @@ $(function () {
 		header.classList.toggle('scrolling-active', windowPosition);
 	})
 
+	// CENTRAL //
 	$(window).scroll(function () {
 		$('.central__link-icon').toggleClass('central__link-icon--active', $(this).scrollTop() > 0);
 	});
 
+	// SLIDER //
 	$('.central__slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -57,12 +60,23 @@ $(function () {
 		autoplaySpeed: 3000,
 	});
 
+	$('.create__slider').slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		arrows: false,
+		dots: true,
+		speed: 800,
+		infinite: true,
+	});
+
+	// MIXITUP
 	var mixer = mixitup('.portfolio__items', {
 		animation: {
 			duration: 500,
 		}
 	});
 
+	// FORM //
 	var errorTxt = 'Ошибка отправки';
 	jQuery("#sendform").validate({
 		submitHandler: function (form) {
