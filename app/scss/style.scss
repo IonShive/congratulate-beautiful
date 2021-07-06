@@ -189,10 +189,11 @@
 		transform: translateX(0%);
 	}
 	&__list-toggle {
-		margin-bottom: 40px;
+		padding-bottom: 65px;
 	}
 	&__list-toggle--navigation {
 		display: none;
+		margin-bottom: 40px;
 	}
 	&__toggle-title {
 		margin-bottom: 20px;
