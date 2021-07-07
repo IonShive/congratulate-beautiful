@@ -8,13 +8,13 @@ body {
 	font-size: 25px;
 	background-color: #f8f9fb;
 	background-color: #fff;
-	@extend %roboto-400;
+	@extend %montserrat-400;
 	text-shadow: none;
 }
 
 a {
 	color: #fff;
-	@extend %roboto-400;
+	@extend %montserrat-400;
 }
 
 ::-webkit-scrollbar-track {
@@ -57,7 +57,7 @@ a {
 	font-size: 45px;
 	font-weight: 400;
 	color: $accent;
-	@extend %roboto-400;
+	@extend %montserrat-400;
 }
 
 .logo {

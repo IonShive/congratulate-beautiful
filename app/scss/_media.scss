@@ -101,7 +101,7 @@
 		}
 		&__img {
 			max-width: 580px;
-			height: 410px;
+			height: 320px;
 		}
 	}
 
@@ -678,12 +678,19 @@
 		&__item-name {
 			height: 40px;
 		}
+		&__tag {
+			font-size: 12px;
+		}
 		&__text {
 			margin-left: 0;
 			font-size: 20px;
 		}
 		&__inner {
 			margin-top: 45px;
+		}
+		&__link-btn {
+			height: 45px;
+			font-size: 20px;
 		}
 	}
 
@@ -700,7 +707,7 @@
 		&__tel,
 		&__email-span,
 		&__tel-span {
-			font-size: 20px;
+			font-size: 17px;
 		}
 		&__items {
 			grid-template-columns: repeat(1, 1fr);

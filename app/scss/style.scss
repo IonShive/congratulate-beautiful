@@ -480,6 +480,7 @@
 	&__item-link {
 		padding: 0 15px;
 		color: $title;
+		@extend %montserrat-600;
 		&:hover {
 			transform: scale(1.1);
 			transition: all 0.5s;
@@ -532,6 +533,7 @@
 		display: inline-block;
 		transition: all 0.5s;
 		color: $title;
+		@extend %marck-script;
 		&:hover {
 			transition: all 0.5s;
 			transform: scale(1.1);
@@ -619,7 +621,7 @@
 	}
 	&__item {
 		max-width: 420px;
-		height: 325px;
+		height: 330px;
 		overflow: hidden;
 		position: relative;
 		border-radius: 5px;
@@ -669,6 +671,7 @@
 		font-weight: 600;
 		padding: 0 15px;
 		color: $title;
+		@extend %montserrat-600;
 		&:hover {
 			transform: scale(1.1);
 			transition: all 0.5s;
@@ -689,7 +692,6 @@
 		max-width: 320px;
 		width: 100%;
 		height: 55px;
-		color: $default;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -698,11 +700,10 @@
 		border: none;
 		font-size: 25px;
 		transition: all 0.3s;
-		background-color: #e8e8e8;
+		background-color: $title;
 		&:hover {
 			transition: all 0.3s;
-			background-color: $title;
-			color: #fff;
+			transform: scale(1.1);
 		}
 	}
 }
@@ -831,7 +832,7 @@
 		display: none;
 	}
 	&__box {
-		max-width: 480px;
+		max-width: 500px;
 		margin-bottom: 50px;
 		display: flex;
 		flex-direction: column;
@@ -842,7 +843,7 @@
 	&__email,
 	&__tel {
 		display: inline;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 		color: inherit;
 	}
 	&__email-span,
@@ -1073,7 +1074,7 @@
 		}
 	}
 	&__text {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		font-weight: 600;
 		color: $default;
 	}
@@ -1154,6 +1155,7 @@
 	&__item-link {
 		padding: 0 15px;
 		color: $title;
+		@extend %montserrat-600;
 		&:hover {
 			transform: scale(1.1);
 			transition: all 0.5s;
