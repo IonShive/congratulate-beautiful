@@ -4,48 +4,6 @@
 @import "libs";
 @import "global";
 
-.preloader {
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	overflow: hidden;
-	background: #e0e0e0;
-	z-index: 100;
-	&__image {
-		position: relative;
-		top: 50%;
-		left: 50%;
-		width: 70px;
-		height: 70px;
-		margin-top: -35px;
-		margin-left: -35px;
-		text-align: center;
-		animation: preloader-rotate 2s infinite linear;
-	}
-	svg {
-		path {
-			fill: $accent;
-		}
-	}
-}
-
-.loaded_hiding .preloader {
-	transition: 0.3s opacity;
-	opacity: 0;
-}
-
-.loaded .preloader {
-	display: none;
-}
-
-@keyframes preloader-rotate {
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
 .header {
 	width: 100%;
 	height: 90px;
@@ -608,6 +566,9 @@
 	&__list-link {
 		font-size: 24px;
 		color: $default;
+	}
+	&__list-span {
+		color: $title;
 	}
 	&__list-wrapper {
 		margin-bottom: 40px;

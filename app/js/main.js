@@ -67,6 +67,14 @@ $(function () {
 		dots: true,
 		speed: 800,
 		infinite: true,
+		responsive: [
+			{
+				breakpoint: 781,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
 	});
 
 	// MIXITUP
