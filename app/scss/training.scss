@@ -171,7 +171,7 @@
     }
 }
 
-.traning-central {
+.training-central {
     padding: 150px 0 50px;
     &__wrapper {
         display: flex;
@@ -189,7 +189,6 @@
         @extend %montserrat-600;
     }
     &__text {
-        max-width: 415px;
         margin-bottom: 30px;
         font-size: 16px;
     }
@@ -215,9 +214,15 @@
     }
     &__item {
         display: flex;
+        justify-content: center;
+        align-items: center;
         margin-right: 30px;
         &:last-child {
             margin-right: 0;
+        }
+        svg {
+            width: 45px;
+            height: 45px;
         }
     }
     &__item-text {
@@ -239,7 +244,7 @@
     }
 }
 
-.traning-info {
+.training-info {
     padding: 70px 0;
     background-image: url("../img/tranning/2.jpg");
     background-attachment: fixed;
@@ -258,12 +263,12 @@
         background: rgba(0, 0, 0, 0.15);
         z-index: -1;
     }
-    .traning-info__title {
+    &__title {
         margin-bottom: 30px;
         font-size: 35px;
         @extend %montserrat-600;
     }
-    .traning-info__text {
+    &__text {
         margin-bottom: 15px;
         font-size: 18px;
     }
@@ -271,56 +276,56 @@
 
 .useful {
     padding: 60px 0;
-    .useful__title {
+    &__title {
         margin-bottom: 20px;
         font-size: 35px;
         color: $default;
         @extend %montserrat-600;
     }
-    .useful__items {
+    &__items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px 10px;
+        grid-gap: 25px;
     }
-    .useful__item {
+    &__item {
         max-width: 540px;
         display: flex;
         justify-content: center;
     }
-    .useful__number {
+    &__number {
         width: 60px;
         margin-right: 5px;
         font-size: 45px;
         color: #eaeaf1;
     }
-    .useful__box {
+    &__box {
         color: $default;
     }
-    .useful__item-title {
+    &__item-title {
         margin-bottom: 10px;
         font-size: 19px;
         @extend %montserrat-600;
     }
-    .useful__item-text {
+    &__item-text {
         font-size: 15px;
     }
 }
 
 .ending {
-    padding: 30px 0 60px;
-    .ending__title {
+    padding: 30px 0 50px;
+    &__title {
         margin-bottom: 20px;
         text-align: center;
         font-size: 35px;
         color: $default;
         @extend %montserrat-600;
     }
-    .ending__items {
+    &__items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 25px 30px;
     }
-    .ending__item {
+    &__item {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -400,7 +405,7 @@
 }
 
 .plan {
-    padding: 70px 0;
+    padding: 50px 0;
     &__box {
         height: auto;
         padding: 50px 0;
@@ -453,32 +458,33 @@
 }
 
 .teacher {
-    .teacher__wrapper {
+    padding: 30px 0;
+    &__wrapper {
         display: flex;
         justify-content: center;
     }
-    .teacher__box {
+    &__box {
         max-width: 560px;
         color: $default;
     }
-    .teacher__img {
+    &__img {
         height: 400px;
         margin-right: 40px;
         border-radius: 10px;
         object-fit: cover;
     }
-    .teacher__title {
+    &__title {
         margin-bottom: 20px;
         font-size: 35px;
         @extend %montserrat-600;
     }
-    .teacher__subtitle {
+    &__subtitle {
         margin-bottom: 20px;
         font-size: 22px;
         color: $title;
         @extend %montserrat-600;
     }
-    .teacher__text {
+    &__text {
         font-size: 18px;
     }
 }
@@ -755,6 +761,44 @@
         }
     }
 
+    .training-central {
+        &__box {
+            max-width: 380px;
+            width: 100%;
+        }
+        &__title {
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+        &__content {
+            margin-bottom: 30px;
+        }
+        &__link {
+            font-size: 20px;
+        }
+        &__img {
+            height: 320px;
+            margin-left: 40px;
+        }
+        &__item {
+            margin-right: 20px;
+            svg {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &__item-text {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+
+    .how-learn {
+        &__items {
+            margin-right: 25px;
+        }
+    }
+
     .contacts {
         &__item {
             margin-right: 15px;
@@ -790,6 +834,84 @@
         }
     }
 
+    .training-central {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__box {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        &__content {
+            max-width: 100%;
+            margin-bottom: 0;
+        }
+        &__title {
+            font-size: 40px;
+            text-align: center;
+        }
+        &__text {
+            font-size: 18px;
+            text-align: center;
+        }
+        &__link {
+            margin: 0 auto;
+        }
+        &__img {
+            width: 800px;
+            margin: 0 auto 40px;
+            order: -1;
+        }
+        &__items {
+            display: none;
+        }
+    }
+
+    .useful {
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__items {
+            grid-gap: 30px;
+        }
+    }
+
+    .ending {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .how-learn {
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__item-title {
+            font-size: 20px;
+        }
+        &__item-text {
+            font-size: 16px;
+        }
+        &__icon {
+            svg {
+                width: 55px;
+                height: 55px;
+            }
+        }
+        &__box-img {
+            display: none;
+        }
+    }
+
+    .teacher {
+        &__wrapper {
+            justify-content: center;
+        }
+        &__text {
+            font-size: 16px;
+        }
+    }
+
     .contacts {
         &__box {
             margin-top: 20px;
@@ -811,10 +933,37 @@
         }
     }
 
-    .contacts {
-        &__box {
-            margin-top: 20px;
+    .training-central {
+        &__title {
+            font-size: 30px;
         }
+    }
+
+    .training-info {
+        &__title {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+    }
+
+    .ending {
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .teacher {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__img {
+            height: 370px;
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+    }
+
+    .contacts {
         &__form-box {
             flex-direction: column;
             margin-bottom: 0;
@@ -833,6 +982,28 @@
         &__form-btn {
             max-width: 510px;
             width: 100%;
+        }
+        &__inner {
+            flex-direction: column;
+        }
+        &__adrres,
+        &__email,
+        &__tel,
+        &__email-span,
+        &__tel-span {
+            font-size: 25px;
+        }
+        &__list-icons {
+            max-width: 330px;
+        }
+        &__list-title {
+            font-size: 25px;
+        }
+        &__link-icon {
+            svg {
+                width: 55px;
+                height: 50px;
+            }
         }
     }
 }
@@ -854,6 +1025,53 @@
         }
     }
 
+    .training-central {
+        padding: 130px 0 30px;
+        &__title {
+            font-size: 30px;
+        }
+        &__img {
+            margin-bottom: 20px;
+        }
+    }
+
+    .training-info {
+        padding: 60px 0;
+    }
+
+    .useful {
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .ending {
+        &__title {
+            font-size: 25px;
+        }
+    }
+
+    .how-learn {
+        &__item-title {
+            font-size: 18px;
+        }
+        &__item-text {
+            font-size: 14px;
+        }
+        &__icon {
+            svg {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+
+    .plan {
+        &__text {
+            font-size: 16px;
+        }
+    }
+
     .contacts {
         padding: 30px 0;
         &__form-title {
@@ -868,6 +1086,15 @@
         &__email-span,
         &__tel-span {
             font-size: 20px;
+        }
+        &__list-title {
+            font-size: 20px;
+        }
+        &__link-icon {
+            svg {
+                width: 45px;
+                height: 40px;
+            }
         }
     }
 

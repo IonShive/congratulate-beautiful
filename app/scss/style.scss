@@ -61,7 +61,8 @@
 		.header__line {
 			background-color: $default;
 		}
-		.header__link {
+		.header__link,
+		.header__link-btn {
 			color: $default;
 			&:hover {
 				color: $accent;
@@ -105,15 +106,13 @@
 			margin-right: 0;
 		}
 	}
-	&__link {
+	&__link,
+	&__link-btn {
 		font-size: 22px;
 		line-height: 31px;
 		transition: all 0.5s;
 		opacity: 1;
 		@extend %marck-script;
-		&.header__link--active {
-			opacity: 1;
-		}
 		&:hover {
 			transition: all 0.5s;
 			color: $accent;
@@ -189,7 +188,9 @@
 		transform: translateX(0%);
 	}
 	&__list-toggle {
-		padding-bottom: 65px;
+		&:last-child {
+			padding-bottom: 60px !important;
+		}
 	}
 	&__list-toggle--navigation {
 		display: none;
@@ -207,9 +208,14 @@
 	}
 	&__toggle-link {
 		padding-bottom: 5px;
+		transition: all 0.3s;
 		font-size: 20px;
 		color: #fff;
 		border-bottom: 1px solid $default;
+		&:hover {
+			transition: all 0.3s;
+			color: $accent;
+		}
 	}
 }
 
