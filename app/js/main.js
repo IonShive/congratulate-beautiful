@@ -13,7 +13,7 @@ $(function () {
 		$('.header__toggle-wrapper').toggleClass('header__toggle-wrapper--active');
 	});
 
-	$(".header__link").on("click", function (event) {
+	$(".header__link, .info__list-link").on("click", function (event) {
 		event.preventDefault();
 		var id = $(this).attr('href'),
 			top = $(id).offset().top;
