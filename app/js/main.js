@@ -22,6 +22,10 @@ $(function () {
 		$('.header__link-viber').toggleClass('header__link-viber--active', $(this).scrollTop() > 0);
 	});
 
+	$('.header__toggle-link').on('click', function () {
+		$('.header__toggle-wrapper').removeClass('header__toggle-wrapper--active');
+	});
+
 	// SLIDER //
 	$('.central__slider').slick({
 		slidesToShow: 1,

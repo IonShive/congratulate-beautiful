@@ -150,8 +150,11 @@
         transform: translateX(0%);
     }
     &__list-toggle {
-        margin-bottom: 40px;
-    }
+        z-index: 100;
+		&:last-child {
+			padding-bottom: 70px !important;
+		}
+	}
     &__list-toggle--navigation {
         display: none;
     }

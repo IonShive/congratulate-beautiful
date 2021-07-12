@@ -150,7 +150,9 @@
 		transform: translateX(0%);
 	}
 	&__list-toggle {
-		padding-bottom: 65px;
+		&:last-child {
+			padding-bottom: 70px !important;
+		}
 	}
 	&__list-toggle--navigation {
 		display: none;

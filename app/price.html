@@ -61,7 +61,7 @@
 						</a>
 					</li>
 					<li class="header__item">
-						<a class="header__link" href="№info">
+						<a class="header__link" href="#info">
 							Информация
 						</a>
 					</li>
@@ -907,6 +907,15 @@
 	</footer>
 
 	<script language="JavaScript" src="js/main.min.js?n=1"></script>
+	<script>
+		$(function () {
+			if ($(window).width() < 545) {
+				$('.header__toggle-link').on('click', function () {
+					$('.header__toggle-wrapper').removeClass('header__toggle-wrapper--active');
+				});
+			}
+		});
+	</script>
 	<script src="js/form.js"></script>
 
 </body>

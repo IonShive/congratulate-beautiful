@@ -126,7 +126,7 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		z-index: 50;
+		z-index: 20;
 		&:hover {
 			.header__line {
 				background-color: $accent;
@@ -181,7 +181,7 @@
 		transform: translateX(250%);
 		background-color: $default;
 		box-shadow: 0 10px 7px 3px $default;
-		z-index: 10;
+		z-index: 15;
 	}
 	&__toggle-wrapper.header__toggle-wrapper--active {
 		transition: all 0.5s;
@@ -433,6 +433,18 @@
 
 .price {
 	padding: 75px 0 45px;
+	&__text {
+		text-align: center;
+		font-size: 25px;
+		margin-bottom: 15px;
+		color: $default;
+		font-weight: 600;
+	}
+    &__text-link {
+		color: $title;
+		font-weight: 600;
+
+	}
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
