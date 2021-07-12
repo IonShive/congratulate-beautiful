@@ -141,7 +141,7 @@
 		transform: translateX(250%);
 		background-color: $default;
 		box-shadow: 0 10px 7px 3px $default;
-		z-index: 5;
+		z-index: 10;
 	}
 	&__toggle-wrapper.header__toggle-wrapper--active {
 		transition: all 0.5s;
@@ -175,6 +175,37 @@
 		&:hover {
 			transition: all 0.3s;
 			color: $accent;
+		}
+	}
+	&__link-viber {
+		width: 60px;
+		height: 60px;
+		position: fixed;
+		bottom: 40px;
+		right: 40px;
+		transition: all 0.5s;
+		svg {
+			width: 60px;
+			height: 60px !important;
+			fill: $default;
+			path {
+				fill: #fff;
+			}
+		}
+		&:hover {
+			transition: all 0.5s;
+			transform: scale(1.1);
+		}
+		&.header__link-viber--active {
+			background-color: #fff;
+			border-radius: 50%;
+			box-shadow: 0px 0px 10px 1px #333;
+			svg {
+				fill: #7f4da0;
+				path {
+					fill: #7f4da0;
+				}
+			}
 		}
 	}
 }
@@ -902,6 +933,16 @@
 	.header {
 		&__toggle-wrapper {
 			width: 50%;
+		}
+		&__link-viber {
+			width: 40px;
+			height: 40px;
+			bottom: 20px;
+			right: 20px;
+			svg {
+				width: 40px;
+				height: 40px !important;
+			}
 		}
 	}
 

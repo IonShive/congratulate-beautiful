@@ -171,6 +171,30 @@
 		color: #fff;
 		border-bottom: 1px solid $default;
 	}
+	&__link-viber {
+		width: 60px;
+		height: 60px;
+		position: fixed;
+		bottom: 40px;
+		right: 40px;
+		z-index: 10;
+		transition: all 0.5s;
+		background-color: #fff;
+		border-radius: 50%;
+		box-shadow: 0px 0px 10px 1px #333;
+		svg {
+			width: 60px;
+			height: 60px !important;
+			fill: #7f4da0;
+			path {
+				fill: #7f4da0;
+			}
+		}
+		&:hover {
+			transition: all 0.5s;
+			transform: scale(1.1);
+		}
+	}
 }
 
 .breadcrumbs {
@@ -494,7 +518,8 @@
 	&__list-item {
 		margin-bottom: 5px;
 	}
-	&__list-link {
+	&__list-link,
+	&__list-link-btn  {
 		font-size: 24px;
 		color: $default;
 	}
@@ -719,7 +744,8 @@
 		&__list-title {
 			font-size: 25px;
 		}
-		&__list-link {
+		&__list-link,
+		&__list-link-btn  {
 			font-size: 20px;
 		}
 		&__link-icon {
@@ -774,6 +800,16 @@
 		&__toggle-wrapper {
 			width: 50%;
 		}
+		&__link-viber {
+			width: 40px;
+			height: 40px;
+			bottom: 20px;
+			right: 20px;
+			svg {
+				width: 40px;
+				height: 40px !important;
+			}
+		}
 	}
 
 	.breadcrumbs {
@@ -821,7 +857,8 @@
 		&__list-title {
 			font-size: 16px;
 		}
-		&__list-link {
+		&__list-link,
+		&__list-link-btn  {
 			font-size: 14px;
 		}
 		&__link-icon {
@@ -932,7 +969,8 @@
 		&__list-title {
 			font-size: 18px;
 		}
-		&__list-link {
+		&__list-link,
+		&__list-link-btn  {
 			font-size: 15px;
 		}
 		&__link-icon {

@@ -102,7 +102,7 @@
 		}
 		&__img {
 			max-width: 580px;
-			height: 320px;
+			height: 380px;
 		}
 	}
 
@@ -337,6 +337,16 @@
 		&__toggle-wrapper {
 			width: 50%;
 		}
+		&__link-viber {
+			width: 40px;
+			height: 40px;
+			bottom: 20px;
+			right: 20px;
+			svg {
+				width: 40px;
+				height: 40px !important;
+			}
+		}
 	}
 
 	.central {
@@ -356,17 +366,6 @@
 		}
 		&__link {
 			font-size: 25px;
-		}
-
-		&__link-icon {
-			width: 40px;
-			height: 40px;
-			bottom: 20px;
-			right: 20px;
-			svg {
-				width: 40px;
-				height: 40px;
-			}
 		}
 	}
 

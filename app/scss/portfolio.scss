@@ -20,7 +20,8 @@
 		.header__line {
 			background-color: $default;
 		}
-		.header__link {
+		.header__link,
+		.header__link-btn {
 			color: $default;
 			&:hover {
 				color: $accent;
@@ -64,7 +65,8 @@
 			margin-right: 0;
 		}
 	}
-	&__link {
+	&__link,
+	&__link-btn {
 		font-size: 22px;
 		line-height: 31px;
 		transition: all 0.5s;
@@ -169,6 +171,37 @@
 		font-size: 20px;
 		color: #fff;
 		border-bottom: 1px solid $default;
+	}
+	&__link-viber {
+		width: 60px;
+		height: 60px;
+		position: fixed;
+		bottom: 40px;
+		right: 40px;
+		transition: all 0.5s;
+		svg {
+			width: 60px;
+			height: 60px !important;
+			fill: $default;
+			path {
+				fill: #fff;
+			}
+		}
+		&:hover {
+			transition: all 0.5s;
+			transform: scale(1.1);
+		}
+		&.header__link-viber--active {
+			background-color: #fff;
+			border-radius: 50%;
+			box-shadow: 0px 0px 10px 1px #333;
+			svg {
+				fill: #7f4da0;
+				path {
+					fill: #7f4da0;
+				}
+			}
+		}
 	}
 }
 
@@ -545,7 +578,8 @@
 	&__list-item {
 		margin-bottom: 5px;
 	}
-	&__list-link {
+	&__list-link,
+	&__list-link-btn {
 		font-size: 24px;
 		color: $default;
 	}
@@ -723,7 +757,8 @@
 		&__item {
 			margin-right: 20px;
 		}
-		&__link {
+		&__link,
+		&__link-btn {
 			font-size: 17px;
 		}
 	}
@@ -812,7 +847,8 @@
 		&__list-title {
 			font-size: 25px;
 		}
-		&__list-link {
+		&__list-link,
+		&__list-link-btn {
 			font-size: 20px;
 		}
 		&__link-icon {
@@ -866,6 +902,16 @@
 	.header {
 		&__toggle-wrapper {
 			width: 50%;
+		}
+		&__link-viber {
+			width: 40px;
+			height: 40px;
+			bottom: 20px;
+			right: 20px;
+			svg {
+				width: 40px;
+				height: 40px !important;
+			}
 		}
 	}
 
@@ -939,7 +985,8 @@
 		&__list-title {
 			font-size: 16px;
 		}
-		&__list-link {
+		&__list-link,
+		&__list-link-btn {
 			font-size: 14px;
 		}
 		&__link-icon {
@@ -1059,7 +1106,8 @@
 		&__list-title {
 			font-size: 18px;
 		}
-		&__list-link {
+		&__list-link ,
+		&__list-link-btn {
 			font-size: 15px;
 		}
 
