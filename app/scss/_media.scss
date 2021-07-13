@@ -614,6 +614,9 @@
 
 	.price {
 		padding: 30px 0;
+		&__text {
+			font-size: 18px;
+		}
 		&__item-title {
 			font-size: 35px;
 		}
