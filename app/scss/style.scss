@@ -259,8 +259,8 @@
         border-radius: 50%;
         background-color: transparent;
         position: fixed;
-        bottom: 40px;
-        right: 40px;
+        bottom: 50px;
+        right: 50px;
         transition: all 0.5s;
         animation: mymove 2s ease-in-out infinite;
 
@@ -850,13 +850,13 @@
     &__title {
         opacity: 0;
         transition: all 0.3s;
-        transform: translateX(20%);
+        transform: translateY(20%);
     }
 
     &__title._active {
         opacity: 1;
         transition: all 0.4s;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 
     &__wrapper {
@@ -1556,13 +1556,13 @@
     &__title {
         opacity: 0;
         transition: all 0.3s;
-        transform: translateX(20%);
+        transform: translateY(20%);
     }
 
     &__title._active {
         opacity: 1;
         transition: all 0.4s;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 
     &__items {
@@ -1745,14 +1745,12 @@
         color: $default;
         opacity: 0;
         transition: all 0.3s;
-        transform: translateX(10%);
         @extend %marck-script;
     }
 
     &__box-title._active {
         opacity: 1;
         transition: all 0.4s ease 0.2s;
-        transform: translateX(0);
     }
 
     &__box-wrapper {
@@ -1871,13 +1869,11 @@
         color: #fff;
         opacity: 0;
         transition: all 0.3s;
-        transform: translateX(10%);
     }
 
     &__text._active {
         opacity: 1;
         transition: all 0.4s ease 0.2s;
-        transform: translateX(10%);
     }
 }
 
