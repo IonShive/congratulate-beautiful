@@ -44,6 +44,10 @@
 
         .header__toggle-link {
             color: $default;
+
+            &:hover {
+                color: $hover;
+            }
         }
 
         svg {
@@ -205,6 +209,12 @@
         font-size: 20px;
         color: #fff;
         border-bottom: 1px solid $default;
+        transition: all 0.3s;
+
+        &:hover {
+            transition: all 0.3s;
+            color: $accent;
+        }
     }
 
     &__link-viber {
@@ -467,13 +477,14 @@
         border: none;
         font-size: 27px;
         border-radius: 10px;
-        background-color: $accent;
+        background-color: $title;
         transition: all 0.5s;
+        cursor: pointer;
         color: #fff;
 
         &:hover {
-            transform: scale(1.1);
-            transition: all 0.5s;
+            transition: all 0.4s;
+            background-color: #0059bb;
         }
     }
 
@@ -643,14 +654,27 @@
     }
 
     &__list-link,
-    &__list-link-btn {
-        font-size: 24px;
-        color: $default;
-    }
+  &__list-link-btn {
+      display: block;
+      font-size: 24px;
+      color: $default;
+      transition: all 0.3s;
 
-    &__list-span {
-        color: $title;
-    }
+      &:hover {
+          transition: all 0.3s;
+
+          color: $hover;
+      }
+  }
+
+  &__list-span {
+      color: $title;
+
+      &:hover {
+          transition: all 0.3s;
+          color: $hover;
+      }
+  }
 
     &__list-wrapper {
         margin-bottom: 40px;
@@ -669,6 +693,7 @@
         svg {
             width: 55px;
             height: 55px;
+            transition: all 0.3s;
 
             path {
                 fill: $title;
@@ -677,7 +702,8 @@
 
         &:hover {
             svg {
-                transform: scale(1.4);
+                transform: scale(1.1);
+                transition: all 0.3s;
             }
         }
     }
@@ -780,10 +806,12 @@
     &__item-link {
         padding: 0 15px;
         color: $title;
+        transition: all 0.3s;
 
         &:hover {
-            transform: scale(1.1);
-            transition: all 0.5s;
+            transform: scale(1.05);
+            transition: all 0.3s;
+            color: $hover;
         }
     }
 

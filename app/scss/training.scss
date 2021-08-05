@@ -44,6 +44,12 @@
 
         .header__toggle-link {
             color: $default;
+            transition: all 0.3s;
+
+            &:hover {
+                transition: all 0.3s;
+                color: $hover;
+            }
         }
 
         svg {
@@ -207,6 +213,12 @@
         font-size: 20px;
         color: #fff;
         border-bottom: 1px solid $default;
+        transition: all 0.3s;
+
+        &:hover {
+            transition: all 0.3s;
+            color: $accent;
+        }
     }
 
     &__link-viber {
@@ -286,10 +298,11 @@
         font-size: 23px;
         transition: all 0.3s;
         background-color: $title;
+        transition: all 0.3s;
 
         &:hover {
             transition: all 0.3s;
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
     }
 
@@ -705,14 +718,16 @@
         align-items: center;
         padding: 10px;
         border: none;
+        cursor: pointer;
         font-size: 23px;
         transition: all 0.3s;
         background-color: $title;
         color: #fff;
+        transition: all 0.3s;
 
         &:hover {
             transition: all 0.3s;
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
     }
 
@@ -873,6 +888,7 @@
         svg {
             width: 45px;
             height: 40px;
+            transition: all 0.3s;
 
             path {
                 fill: $title;
@@ -881,7 +897,8 @@
 
         &:hover {
             svg {
-                transform: scale(1.4);
+                transition: all 0.3s;
+                transform: scale(1.2);
             }
         }
     }

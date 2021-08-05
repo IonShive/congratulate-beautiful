@@ -44,6 +44,12 @@
 
         .header__toggle-link {
             color: $default;
+            transition: all 0.3s;
+
+            &:hover {
+                transition: all 0.3s;
+                color: $hover;
+            }
         }
 
         svg {
@@ -206,6 +212,12 @@
         font-size: 20px;
         color: #fff;
         border-bottom: 1px solid $default;
+        transition: all 0.3s;
+
+        &:hover {
+            transition: all 0.3s;
+            color: $accent;
+        }
     }
 
     &__link-viber {
@@ -313,7 +325,12 @@
     &__text-link {
         color: $title;
         font-weight: 600;
+        transition: all 0.3s;
 
+        &:hover {
+            transition: all 0.3s;
+            color: $hover;
+        }
     }
 
     &__items {
@@ -447,6 +464,17 @@
             padding: 0 5px;
             line-height: 0;
 
+            &:hover {
+                button {
+                    border-color: $hover;
+
+                    &::before {
+                        transition: all 0.3s;
+                        background-color: $hover;
+                    }
+                }
+            }
+
             button {
                 width: 30px;
                 height: 30px;
@@ -458,6 +486,7 @@
                 background-color: transparent;
                 border: 2px solid #e8e8e8;
                 position: relative;
+                transition: all 0.3s;
 
                 &::before {
                     content: "";
@@ -560,13 +589,14 @@
         border: none;
         font-size: 27px;
         border-radius: 10px;
-        background-color: $accent;
+        background-color: $title;
         transition: all 0.5s;
+        cursor: pointer;
         color: #fff;
 
         &:hover {
-            transform: scale(1.1);
-            transition: all 0.5s;
+            transition: all 0.4s;
+            background-color: #0059bb;
         }
     }
 
@@ -737,12 +767,24 @@
 
     &__list-link,
     &__list-link-btn {
+        display: block;
         font-size: 24px;
         color: $default;
+        transition: all 0.3s;
+
+        &:hover {
+            transition: all 0.3s;
+            color: $hover;
+        }
     }
 
     &__list-span {
         color: $title;
+
+        &:hover {
+            transition: all 0.3s;
+            color: $hover;
+        }
     }
 
     &__list-wrapper {
@@ -762,6 +804,7 @@
         svg {
             width: 55px;
             height: 55px;
+            transition: all 0.3s;
 
             path {
                 fill: $title;
@@ -770,7 +813,8 @@
 
         &:hover {
             svg {
-                transform: scale(1.4);
+                transition: all 0.3s;
+                transform: scale(1.2);
             }
         }
     }
@@ -874,10 +918,12 @@
         padding: 0 15px;
         color: $title;
         @extend %montserrat-600;
+        transition: all 0.3s;
 
         &:hover {
-            transform: scale(1.1);
-            transition: all 0.5s;
+            transform: scale(1.05);
+            transition: all 0.3s;
+            color: $hover;
         }
     }
 

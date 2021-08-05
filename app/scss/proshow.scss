@@ -44,6 +44,12 @@
 
         .header__toggle-link {
             color: $default;
+            transition: all 0.3s;
+
+            &:hover {
+                transition: all 0.3s;
+                color: $hover;
+            }
         }
 
         svg {
@@ -205,6 +211,12 @@
         font-size: 20px;
         color: #fff;
         border-bottom: 1px solid $default;
+        transition: all 0.3s;
+
+        &:hover {
+            transition: all 0.3s;
+            color: $accent;
+        }
     }
 
     &__link-viber {
@@ -315,6 +327,7 @@
         margin: 5px;
         border: none;
         font-size: 20px;
+        cursor: pointer;
         transition: all 0.3s;
         background-color: #e5e5e5;
         text-transform: uppercase;
@@ -344,7 +357,12 @@
     &__text-link {
         color: $title;
         font-weight: 600;
+        transition: all 0.3s;
 
+        &:hover {
+            transition: all 0.3s;
+            color: $hover;
+        }
     }
 
     &__item {
@@ -411,16 +429,24 @@
         bottom: 0;
         font-size: 55px;
         @extend %marck-script;
+        transition: all 0.3s;
+
+        &:hover {
+            transition: all 0.3s;
+            color: $hover;
+        }
     }
 
     &__item-download {
         padding: 0 15px;
         font-size: 27px;
         color: $title;
+        transition: all 0.3s;
 
         &:hover {
-            transform: scale(1.1);
-            transition: all 0.5s;
+            transform: scale(1.05);
+            transition: all 0.3s;
+            color: $hover;
         }
     }
 }
@@ -500,13 +526,14 @@
         border: none;
         font-size: 27px;
         border-radius: 10px;
-        background-color: $accent;
+        background-color: $title;
         transition: all 0.5s;
+        cursor: pointer;
         color: #fff;
 
         &:hover {
-            transform: scale(1.1);
-            transition: all 0.5s;
+            transition: all 0.4s;
+            background-color: #0059bb;
         }
     }
 
@@ -677,12 +704,24 @@
 
     &__list-link,
     &__list-link-btn {
+        display: block;
         font-size: 24px;
         color: $default;
+        transition: all 0.3s;
+
+        &:hover {
+            transition: all 0.3s;
+            color: $hover;
+        }
     }
 
     &__list-span {
         color: $title;
+
+        &:hover {
+            transition: all 0.3s;
+            color: $hover;
+        }
     }
 
     &__list-wrapper {
@@ -702,6 +741,7 @@
         svg {
             width: 55px;
             height: 55px;
+            transition: all 0.3s;
 
             path {
                 fill: $title;
@@ -710,7 +750,8 @@
 
         &:hover {
             svg {
-                transform: scale(1.4);
+                transition: all 0.3s;
+                transform: scale(1.2);
             }
         }
     }
@@ -813,10 +854,12 @@
     &__item-link {
         padding: 0 15px;
         color: $title;
+        transition: all 0.3s;
 
         &:hover {
-            transform: scale(1.1);
-            transition: all 0.5s;
+            transform: scale(1.05);
+            transition: all 0.3s;
+            color: $hover;
         }
     }
 
