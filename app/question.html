@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Поздравить красиво - это сайт яркого и оригинального видео для всех праздников, от радостных детских победах
 		в конкурсах до юбилея к восьмидесятилетию Матери.</title>
-	<link rel="stylesheet" href="css/portfolio.min.css">
+	<link rel="stylesheet" href="css/question.min.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
@@ -46,8 +46,8 @@
 						</a>
 					</li>
 					<li class="header__item">
-						<a class="header__link" href="#breadcrumbs">
-							Портфолио
+						<a class="header__link" href="#question">
+							Ответы
 						</a>
 					</li>
 					<li class="header__item">
@@ -58,6 +58,11 @@
 					<li class="header__item">
 						<a class="header__link" href="#info">
 							Информация
+						</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link-btn" href="portfolio.html">
+							Портфолио
 						</a>
 					</li>
 				</ul>
@@ -81,13 +86,18 @@
 					</a>
 				</li>
 				<li class="header__toggle-item">
-					<a class="header__toggle-link" href="#breadcrumbs">
-						Портфолио
+					<a class="header__toggle-link" href="#question">
+						Ответы
+					</a>
+				</li>
+				<li class="header__toggle-item">
+					<a class="header__toggle-link" href="#contacts">
+						Контакты
 					</a>
 				</li>
 				<li class="header__toggle-item">
 					<a class="header__toggle-link" href="#info">
-						Контакты
+						Информация
 					</a>
 				</li>
 			</ul>
@@ -117,12 +127,7 @@
 				</li>
 				<li class="header__toggle-item">
 					<a class="header__toggle-link" href="price.html">
-						Весь перечень услуг и цен
-					</a>
-				</li>
-				<li class="header__toggle-item">
-					<a class="header__toggle-link" href="portfolio.html">
-						Все наши работы
+						Цены на проекты
 					</a>
 				</li>
 			</ul>
@@ -144,11 +149,12 @@
 	</header>
 
 	<main class="main">
+
 		<div class="breadcrumbs" id="breadcrumbs">
 			<div class="container">
 				<div class="breadcrumbs__wrapper">
 					<h1 class="breadcrumbs__title">
-						Все наши работы
+						Ответы на часто задаваемы вопросы
 					</h1>
 					<div class="breadcrumbs__inner">
 						<ul class="breadcrumbs__list">
@@ -159,7 +165,7 @@
 							</li>
 							<li class="breadcrumbs__item">
 								<span class="breadcrumbs__link">
-									Портфолио
+									Ответы
 								</span>
 							</li>
 						</ul>
@@ -168,593 +174,478 @@
 			</div>
 		</div>
 
-		<section class="portfolio" id="portfolio">
-			<div class="container-max">
-				<div class="portfolio__buttons">
-					<button class="portfolio__btn" data-filter="all">
-						Посмотреть все
-					</button>
-					<button class="portfolio__btn" data-filter=".birthday">
-						Юбилей и День рождения
-					</button>
-					<button class="portfolio__btn" data-filter=".school">
-						Школьное видео
-					</button>
-					<button class="portfolio__btn" data-filter=".advertising">
-						Рекламное видео
-					</button>
-					<button class="portfolio__btn" data-filter=".memory">
-						Видео в память
-					</button>
-					<button class="portfolio__btn" data-filter=".wedding">
-						Свадебное видео
-					</button>
-					<button class="portfolio__btn" data-filter=".kindergarten">
-						Детский сад, школа
-					</button>
-					<button class="portfolio__btn" data-filter=".baby">
-						Детские видеопоздравления
-					</button>
-					<button class="portfolio__btn" data-filter=".miscellanea">
-						Разное
-					</button>
-				</div>
-				<div class="portfolio__items">
-					<div class="portfolio__item mix wedding">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/wedding-1.webp" alt="wedding">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Свадебная любовная история з фотографиями
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Свадебное видео
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=qJIOXAbotgk">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix wedding">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/wedding-3.webp" alt="wedding">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Подарок родителям на годовщину свадьбы
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Свадебное видео
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=0J5J57TTFcQ">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix miscellanea">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/father-1.webp" alt="miscellanea">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Идеальный отец для своей маленькой дочери
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Разное
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=7szKt8g1kno">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix school">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/school-1.webp" alt="miscellanea">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Первый звонок на первое сентября
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Разное
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=b_DslF-wGXg">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix miscellanea">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/children-1.webp" alt="miscellanea">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Визитка на конкурс "Шоу маленьких джентльменов"
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Разное
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=WX-oTvnCmhs">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix birthday">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/pensioner-1.webp" alt="birthday">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Видео Поздравление для матери на юбилей к 70 лет
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Юбилей и День рождения
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=MqGuZC-zSTo">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix school">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/school-2.webp" alt="school">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Мой любимый класс
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Школьное видео
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=Tb5KY0rxLpA">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix birthday">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/flowers-1.webp" alt="birthday">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Красивое Слайд шоу поздравление на 20 лет дочери
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Юбилей и День рождения
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=vgkZWFbmLmE">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix birthday">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/mother-1.webp" alt="birthday">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Очень красивый подарок маме
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Юбилей и День рождения
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=1D_Nae9g9FY">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix birthday">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/children-5.webp" alt="birthday">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Поздравление племянницы с Днем рождения
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Юбилей и День рождения
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=_sUTer_tZi4">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix baby">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/children-2.webp" alt="baby">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Дочке с днем рождения от мамы - нам два годика
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Детские видеопоздравления
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=Nwxeb0YfFLk">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix baby">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/birthday-1.webp" alt="children">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								День рождения девочки три годика
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Детские видеопоздравления
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=LJfArKDK1ls">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix school">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/school-4.webp" alt="school">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Выпускной одиннадцатого класса
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Школьное видео
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=aTuC9LHg-zY">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix birthday">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/birthday-2.webp" alt="birthday">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								С Днем рождения тебя
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Юбилей и День рождения
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=8ItNxxPWB14">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix baby">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/children-4.webp" alt="baby">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Лето в деревне
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Детские видеопоздравления
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=2rvtpQB8xTw">Смотреть
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix memory">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/funeral-2.webp" alt="memory">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Посвящается памяти любимого математика
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Видео в память
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=nQ9nL3JMMJA">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix advertising">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/gymnast-1.webp" alt="advertising">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Ванинские акробаты на карантине
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Рекламное видео
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=ZnoXUMtYrTM">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix birthday">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/girl-1.webp" alt="birthday">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								С Днем рождения тебя моя любимая дочь
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Юбилей и День рождения
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=8ItNxxPWB14">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix wedding">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/wedding-2.webp" alt="wedding">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Подарок на вторую годовщину свадьбы
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Свадебное видео
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=MbDy62u9EDg">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix memory">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/funeral-1.webp" alt="memory">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Память о лучшей Матери на свете
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Видео в память
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=YmowpS6SZgU">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix advertising">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/bank-1.webp" alt="advertising">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Филиала АКБ «ФОРА БАНК»
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Рекламное видео
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=_d6GuorwOvs">Смотреть</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="portfolio__item mix school">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/school-5.webp" alt="school">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Теперь мы первоклашки
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Школьное видео
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=ekghxp_YC3Q">Смотреть</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="portfolio__item mix baby">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/children-3.webp" alt="baby">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Сказочный музыкальный подарок
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Детские видеопоздравления
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=WGOw9P_ngzU">Смотреть
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix memory">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/funeral-4.webp" alt="memory">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Светлая память семье погибших при пожаре
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Видео в память
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=rzfw08M-vcc">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix wedding">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/father-2.webp" alt="wedding">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Отец ведет дочь под венец
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Свадебное видео
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=YOVVklYuwr8">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix school">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/school-3.webp" alt="school">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Выпускной 4-Г
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Школьное видео
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=-Xu_VCWK-0k">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix kindergarten">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/children-8.webp" alt="kindergarten">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Выпускной в детском саду
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Детский сад, школа
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=hH5OmDvOJLM">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix advertising">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/dog-1.webp" alt="advertising">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Наши питомцы - Южнорусские овчарки
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Рекламное видео
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=RYZo4qiET7M">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix advertising">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/kindergarten-1.webp" alt="advertising">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								45-летие детского сада
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Рекламное видео
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=xZa03oAt3bg">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix kindergarten">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/children-6.webp" alt="kindergarten">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Утренник в детском саду
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Детский сад, школа
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=kweGUskGDDs">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix kindergarten">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/children-7.webp" alt="kindergarten">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Прощай любимый детский садик
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Детский сад, школа
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=md5bqzUklQQ">Смотреть</a>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio__item mix memory">
-						<div class="portfolio__img-box">
-							<img class="portfolio__item-img" src="img/portfolio/funeral-3.webp" alt="memory">
-						</div>
-						<div class="portfolio__box">
-							<p class="portfolio__item-name">
-								Вечная память тебе, моя подруга
-							</p>
-							<div class="portfolio__inner">
-								<p class="portfolio__tag">
-									Видео в память
-								</p>
-								<a class="portfolio__link" data-fancybox
-									href="https://www.youtube.com/watch?v=7OeM33BB6C4">Смотреть</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<p class="portfolio__text">
-					Посмотреть больше вы можете на
-					<a class="portfolio__link-icon" href="https://www.youtube.com/channel/UCkhObP0P5sME1jO98yfHb7Q">
-						Youtube
-					</a>
+		<section class="question" id="question">
+			<div class="container">
+				<p class="question__title">
+					Вопросы об про цены и скидки
 				</p>
+				<div class="question__list">
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?Где вы находитесь?Где вы находитесь?Где вы находитесь?Где вы
+							находитесь?Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							И в маркетинге, и в интернет-маркетинге вы наверняка неоднократно встречали понятие
+							преимуществ и выгод. При разработке качественной Landing page блок с перечнем преимуществ
+							и/или выгод является обязательной частью продающей стратегии и структуры. Но многие
+							владельцы бизнесов воспринимают два понятия равноценными, что является большой ошибкой.
+							По своей ценности и воздействию на клиента преимущества и выгоды идентичны. Они несут единый
+							результат. Но по значению отличаются, поэтому важно понимать в чем, а также знать как и
+							когда их задействовать.
+							Преимущества формируются исходя из характеристик товара, услуги или компании в целом. С их
+							помощью клиент понимает почему и чем ваша компания лучше и почему это лучше для него.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							И в маркетинге, и в интернет-маркетинге вы наверняка неоднократно встречали понятие
+							преимуществ и выгод. При разработке качественной Landing page блок с перечнем преимуществ
+							и/или выгод является обязательной частью продающей стратегии и структуры. Но многие
+							владельцы бизнесов воспринимают два понятия равноценными, что является большой ошибкой.
+							По своей ценности и воздействию на клиента преимущества и выгоды идентичны. Они несут единый
+							результат. Но по значению отличаются, поэтому важно понимать в чем, а также знать как и
+							когда их задействовать.
+							Преимущества формируются исходя из характеристик товара, услуги или компании в целом. С их
+							помощью клиент понимает почему и чем ваша компания лучше и почему это лучше для него.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							И в маркетинге, и в интернет-маркетинге вы наверняка неоднократно встречали понятие
+							преимуществ и выгод. При разработке качественной Landing page блок с перечнем преимуществ
+							и/или выгод является обязательной частью продающей стратегии и структуры. Но многие
+							владельцы бизнесов воспринимают два понятия равноценными, что является большой ошибкой.
+							По своей ценности и воздействию на клиента преимущества и выгоды идентичны. Они несут единый
+							результат. Но по значению отличаются, поэтому важно понимать в чем, а также знать как и
+							когда их задействовать.
+							Преимущества формируются исходя из характеристик товара, услуги или компании в целом. С их
+							помощью клиент понимает почему и чем ваша компания лучше и почему это лучше для него.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							И в маркетинге, и в интернет-маркетинге вы наверняка неоднократно встречали понятие
+							преимуществ и выгод. При разработке качественной Landing page блок с перечнем преимуществ
+							и/или выгод является обязательной частью продающей стратегии и структуры. Но многие
+							владельцы бизнесов воспринимают два понятия равноценными, что является большой ошибкой.
+							По своей ценности и воздействию на клиента преимущества и выгоды идентичны. Они несут единый
+							результат. Но по значению отличаются, поэтому важно понимать в чем, а также знать как и
+							когда их задействовать.
+							Преимущества формируются исходя из характеристик товара, услуги или компании в целом. С их
+							помощью клиент понимает почему и чем ваша компания лучше и почему это лучше для него.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							И в маркетинге, и в интернет-маркетинге вы наверняка неоднократно встречали понятие
+							преимуществ и выгод. При разработке качественной Landing page блок с перечнем преимуществ
+							и/или выгод является обязательной частью продающей стратегии и структуры. Но многие
+							владельцы бизнесов воспринимают два понятия равноценными, что является большой ошибкой.
+							По своей ценности и воздействию на клиента преимущества и выгоды идентичны. Они несут единый
+							результат. Но по значению отличаются, поэтому важно понимать в чем, а также знать как и
+							когда их задействовать.
+							Преимущества формируются исходя из характеристик товара, услуги или компании в целом. С их
+							помощью клиент понимает почему и чем ваша компания лучше и почему это лучше для него.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							И в маркетинге, и в интернет-маркетинге вы наверняка неоднократно встречали понятие
+							преимуществ и выгод. При разработке качественной Landing page блок с перечнем преимуществ
+							и/или выгод является обязательной частью продающей стратегии и структуры. Но многие
+							владельцы бизнесов воспринимают два понятия равноценными, что является большой ошибкой.
+							По своей ценности и воздействию на клиента преимущества и выгоды идентичны. Они несут единый
+							результат. Но по значению отличаются, поэтому важно понимать в чем, а также знать как и
+							когда их задействовать.
+							Преимущества формируются исходя из характеристик товара, услуги или компании в целом. С их
+							помощью клиент понимает почему и чем ваша компания лучше и почему это лучше для него.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							Наша студия виртуальная. Монтаж видео, создание слайд-шоу из фотографий производится
+							удалённо, через сеть интернет, это позволяет сделать заказ и получить результат сидя за
+							компьютером, не выходя из дома. А также удерживать минимальные цены на видеопродукцию,
+							т.к. происходит экономия на арендной плате за помещения, коммунальных платежах и.т.д.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+				S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+				c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+				c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+				s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							Наша студия виртуальная. Монтаж видео, создание слайд-шоу из фотографий производится
+							удалённо, через сеть интернет, это позволяет сделать заказ и получить результат сидя за
+							компьютером, не выходя из дома. А также удерживать минимальные цены на видеопродукцию,
+							т.к. происходит экономия на арендной плате за помещения, коммунальных платежах и.т.д.
+						</p>
+					</div>
+				</div>
+				<p class="question__title">
+					Вопросы об ценах
+				</p>
+				<div class="question__list">
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?Где вы находитесь?Где вы находитесь?Где вы находитесь?Где вы
+							находитесь?Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							И в маркетинге, и в интернет-маркетинге вы наверняка неоднократно встречали понятие
+							преимуществ и выгод. При разработке качественной Landing page блок с перечнем преимуществ
+							и/или выгод является обязательной частью продающей стратегии и структуры. Но многие
+							владельцы бизнесов воспринимают два понятия равноценными, что является большой ошибкой.
+							По своей ценности и воздействию на клиента преимущества и выгоды идентичны. Они несут единый
+							результат. Но по значению отличаются, поэтому важно понимать в чем, а также знать как и
+							когда их задействовать.
+							Преимущества формируются исходя из характеристик товара, услуги или компании в целом. С их
+							помощью клиент понимает почему и чем ваша компания лучше и почему это лучше для него.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							И в маркетинге, и в интернет-маркетинге вы наверняка неоднократно встречали понятие
+							преимуществ и выгод. При разработке качественной Landing page блок с перечнем преимуществ
+							и/или выгод является обязательной частью продающей стратегии и структуры. Но многие
+							владельцы бизнесов воспринимают два понятия равноценными, что является большой ошибкой.
+							По своей ценности и воздействию на клиента преимущества и выгоды идентичны. Они несут единый
+							результат. Но по значению отличаются, поэтому важно понимать в чем, а также знать как и
+							когда их задействовать.
+							Преимущества формируются исходя из характеристик товара, услуги или компании в целом. С их
+							помощью клиент понимает почему и чем ваша компания лучше и почему это лучше для него.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							И в маркетинге, и в интернет-маркетинге вы наверняка неоднократно встречали понятие
+							преимуществ и выгод. При разработке качественной Landing page блок с перечнем преимуществ
+							и/или выгод является обязательной частью продающей стратегии и структуры. Но многие
+							владельцы бизнесов воспринимают два понятия равноценными, что является большой ошибкой.
+							По своей ценности и воздействию на клиента преимущества и выгоды идентичны. Они несут единый
+							результат. Но по значению отличаются, поэтому важно понимать в чем, а также знать как и
+							когда их задействовать.
+							Преимущества формируются исходя из характеристик товара, услуги или компании в целом. С их
+							помощью клиент понимает почему и чем ваша компания лучше и почему это лучше для него.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							И в маркетинге, и в интернет-маркетинге вы наверняка неоднократно встречали понятие
+							преимуществ и выгод. При разработке качественной Landing page блок с перечнем преимуществ
+							и/или выгод является обязательной частью продающей стратегии и структуры. Но многие
+							владельцы бизнесов воспринимают два понятия равноценными, что является большой ошибкой.
+							По своей ценности и воздействию на клиента преимущества и выгоды идентичны. Они несут единый
+							результат. Но по значению отличаются, поэтому важно понимать в чем, а также знать как и
+							когда их задействовать.
+							Преимущества формируются исходя из характеристик товара, услуги или компании в целом. С их
+							помощью клиент понимает почему и чем ваша компания лучше и почему это лучше для него.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							И в маркетинге, и в интернет-маркетинге вы наверняка неоднократно встречали понятие
+							преимуществ и выгод. При разработке качественной Landing page блок с перечнем преимуществ
+							и/или выгод является обязательной частью продающей стратегии и структуры. Но многие
+							владельцы бизнесов воспринимают два понятия равноценными, что является большой ошибкой.
+							По своей ценности и воздействию на клиента преимущества и выгоды идентичны. Они несут единый
+							результат. Но по значению отличаются, поэтому важно понимать в чем, а также знать как и
+							когда их задействовать.
+							Преимущества формируются исходя из характеристик товара, услуги или компании в целом. С их
+							помощью клиент понимает почему и чем ваша компания лучше и почему это лучше для него.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							И в маркетинге, и в интернет-маркетинге вы наверняка неоднократно встречали понятие
+							преимуществ и выгод. При разработке качественной Landing page блок с перечнем преимуществ
+							и/или выгод является обязательной частью продающей стратегии и структуры. Но многие
+							владельцы бизнесов воспринимают два понятия равноценными, что является большой ошибкой.
+							По своей ценности и воздействию на клиента преимущества и выгоды идентичны. Они несут единый
+							результат. Но по значению отличаются, поэтому важно понимать в чем, а также знать как и
+							когда их задействовать.
+							Преимущества формируются исходя из характеристик товара, услуги или компании в целом. С их
+							помощью клиент понимает почему и чем ваша компания лучше и почему это лучше для него.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+									   S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+									   c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+									   c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+									   s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							Наша студия виртуальная. Монтаж видео, создание слайд-шоу из фотографий производится
+							удалённо, через сеть интернет, это позволяет сделать заказ и получить результат сидя за
+							компьютером, не выходя из дома. А также удерживать минимальные цены на видеопродукцию,
+							т.к. происходит экономия на арендной плате за помещения, коммунальных платежах и.т.д.
+						</p>
+					</div>
+					<div class="question__list-item">
+						<h3 class="question__list-title">
+							<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+								xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+								viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+								<path d="M12,24C5.4,24,0,18.6,0,12S5.4,0,12,0s12,5.4,12,12S18.6,24,12,24z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10
+				S17.5,2,12,2z" />
+								<path d="M12,16c-0.6,0-1-0.4-1-1v-0.7c0-1.5,0.8-2.8,2-3.5c0.8-0.4,1.2-1.3,1-2.1c-0.1-0.8-0.8-1.5-1.6-1.6
+				c-0.6-0.1-1.2,0-1.7,0.4C10.3,7.8,10,8.4,10,9c0,0.6-0.4,1-1,1S8,9.6,8,9c0-1.2,0.5-2.3,1.4-3.1c0.9-0.8,2.1-1.1,3.3-0.9
+				c1.6,0.3,2.9,1.6,3.2,3.2c0.3,1.7-0.5,3.4-2,4.2c-0.6,0.3-0.9,1-0.9,1.8V15C13,15.6,12.6,16,12,16z" />
+								<circle cx="12" cy="18" r="1" />
+								<path d="M12,19.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S12.8,19.5,12,19.5z M12,17.5c-0.3,0-0.5,0.2-0.5,0.5
+				s0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5S12.3,17.5,12,17.5z" />
+							</svg>
+							Где вы находитесь?
+						</h3>
+						<p class="question__list-subtitle">
+							Наша студия виртуальная. Монтаж видео, создание слайд-шоу из фотографий производится
+							удалённо, через сеть интернет, это позволяет сделать заказ и получить результат сидя за
+							компьютером, не выходя из дома. А также удерживать минимальные цены на видеопродукцию,
+							т.к. происходит экономия на арендной плате за помещения, коммунальных платежах и.т.д.
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -847,8 +738,8 @@
 							</a>
 						</li>
 						<li class="info__list-item">
-							<a class="info__list-link" href="#breadcrumbs">
-								Портфолио
+							<a class="info__list-link" href="#question">
+								Ответы
 							</a>
 						</li>
 						<li class="info__list-item">
@@ -857,8 +748,8 @@
 							</a>
 						</li>
 						<li class="info__list-item">
-							<a class="info__list-link-btn" href="poems.html">
-								Сборник стихов
+							<a class="info__list-link-btn" href="portfolio.html">
+								Примеры робот
 							</a>
 						</li>
 					</ul>
@@ -1122,7 +1013,7 @@
 							<p class="info__item-price">
 								15 000 руб
 							</p>
-							<a class="info__item-link" href="training.html">Подробнее</a>
+							<a class="info__item-link" href="#">Подробнее</a>
 						</div>
 						<p class="info__item-text">
 							Если вы здесь, - значит Вам хотелось бы научиться делать красочные видео. Как сделать такой
@@ -1133,22 +1024,22 @@
 					</div>
 					<div class="info__item">
 						<div class="info__img-box">
-							<img class="info__item-img" src="img/info/camera.webp" alt="camera">
+							<img class="info__item-img" src="img/info/pc.webp" alt="book">
 							<h3 class="info__item-title">
-								Проекты ProShow Producer
+								Сборник качественных футажей
 							</h3>
 						</div>
 						<div class="info__box">
 							<p class="info__item-price">
 								бесплатно
 							</p>
-							<a class="info__item-link" href="proshow.html">Подробнее</a>
+							<a class="info__item-link" href="poems.html">Подробнее</a>
 						</div>
 						<p class="info__item-text">
-							ProShow Producer имеет очень высокую цену и позиционируется разработчиками как программный
-							продукт, позволяющий создавать презентации и слайд-шоу профессионального качества. Работа
-							над проектом ведется без участия каких-либо Мастеров. Различные инструменты программного
-							продукта не делятся на шаги, этапы.
+							Если вы любите создавать видео, вам наверняка приходилось использовать футажи. Футаж – это
+							короткий видеоролик, сделанный специально для видеомонтажа. Это может быть анимированный
+							фон, шаблон с текстом, спецэффект на прозрачном фоне или видеофрагмент с определенной
+							тематикой (природа, спорт, путешествия и другое).
 						</p>
 					</div>
 					<div class="info__item">
@@ -1188,6 +1079,7 @@
 
 	<script language="JavaScript" src="js/main.min.js?n=1"></script>
 	<script src="js/form.js"></script>
+	<script src="js/question.js"></script>
 
 </body>
 

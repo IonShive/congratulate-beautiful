@@ -328,7 +328,8 @@
             font-size: 25px;
         }
 
-        &__list-link {
+        &__list-link,
+        &__list-link-btn {
             font-size: 20px;
         }
 
@@ -587,6 +588,20 @@
         }
     }
 
+    .question {
+        &__subtitle {
+            font-size: 14px;
+        }
+
+        &__list-title {
+            font-size: 18px;
+        }
+
+        &__list-subtitle {
+            font-size: 16px;
+        }
+    }
+
     .info {
         &__list {
             svg {
@@ -602,7 +617,8 @@
             font-size: 16px;
         }
 
-        &__list-link {
+        &__list-link,
+        &__list-link-btn {
             font-size: 14px;
         }
 
@@ -883,6 +899,32 @@
         }
     }
 
+    .question {
+        &__title {
+            font-size: 25px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+        }
+
+        &__list-title {
+            padding: 15px 40px;
+
+            &::before,
+            &::after {
+                height: 20px;
+                right: 25px;
+            }
+
+            svg {
+                width: 23px;
+                height: 23px;
+                left: 10px;
+            }
+        }
+    }
+
     .info {
         padding: 30px 0;
 
@@ -907,7 +949,8 @@
             font-size: 18px;
         }
 
-        &__list-link {
+        &__list-link,
+        &__list-link-btn {
             font-size: 15px;
         }
 
