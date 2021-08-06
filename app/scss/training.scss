@@ -575,7 +575,7 @@
     }
 
     &__item {
-        padding: 30px 40px;
+        padding: 20px 60px 20px 30px;
         margin-bottom: 20px;
         background-color: #eeeefc;
         color: $default;
@@ -583,12 +583,43 @@
     }
 
     &__item-title {
-        margin-bottom: 15px;
-        font-size: 20px;
+        padding: 15px 0;
+        font-size: 18px;
+        cursor: pointer;
+        position: relative;
         @extend %montserrat-600;
+
+        &::before,
+        &::after {
+            content: '';
+            background-color: $title;
+            position: absolute;
+            width: 3px;
+            height: 30px;
+            top: 10px;
+            right: -25px;
+        }
+
+        &::before {
+            transform: rotate(90deg);
+        }
+
+        &::after {
+            transition: all 0.3s;
+            transform: rotate(0);
+
+        }
+    }
+
+    &__item-title.plan__item-title--active {
+        &::after {
+            transition: all 0.3s;
+            transform: rotate(90deg);
+        }
     }
 
     &__item-text {
+        display: none;
         font-size: 16px;
     }
 }

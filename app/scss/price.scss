@@ -446,9 +446,9 @@
     }
 
     &__item-span {
-        margin-right: 5px;
+        margin-right: 10px;
         font-size: 25px;
-        color: #d2cfcf;
+        color: #948f8f;
         @extend %montserrat-400;
     }
 
@@ -484,7 +484,7 @@
                 cursor: pointer;
                 border-radius: 50%;
                 background-color: transparent;
-                border: 2px solid #e8e8e8;
+                border: 2px solid #948f8f;
                 position: relative;
                 transition: all 0.3s;
 
@@ -494,7 +494,7 @@
                     width: 5px;
                     height: 5px;
                     border-radius: 50%;
-                    background-color: #e8e8e8;
+                    background-color: #948f8f;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);

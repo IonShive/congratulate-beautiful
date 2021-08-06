@@ -335,7 +335,7 @@
     }
 
     &__item {
-        max-width: 400px;
+        max-width: 440px;
         margin: 0 auto 60px;
         @extend %montserrat-400;
 
@@ -355,11 +355,12 @@
     &__item-text {
         margin-bottom: 15px;
         color: $default;
+        font-size: 22px;
     }
 
     &__inner {
         padding-bottom: 5px;
-        font-size: 20px;
+        font-size: 18px;
         color: #c7c3c3;
         display: flex;
         justify-content: space-between;
