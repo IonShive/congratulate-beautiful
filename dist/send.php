@@ -1,5 +1,5 @@
  <?php
-$to = 'vlad.balaban2020@gmail.com';
+$to = 'pozdravit.krasivo@gmail.com';
 
 if ( isset( $_POST['sendMail'] ) ) {
   $name  = substr( $_POST['name'], 0, 64 );
@@ -24,7 +24,7 @@ if ( isset( $_POST['sendMail'] ) ) {
 }
 
 function send_mail($to, $body, $email, $filepath, $filename)
-{ 
+{
   $subject = 'Форма с сайта "Поздравить красиво - это сайт яркого и оригинального видео для всех праздников"';
   $boundary = "--".md5(uniqid(time())); 
   $headers = "From: ".$email."\r\n";   
