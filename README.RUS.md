@@ -4,7 +4,7 @@
 **Учебный проект для практики верстки**
 
 ## Требования:
-* [Node.js](https://nodejs.org/en/)
+* [Node.js](https://nodejs.org/en/) версия 14.15.1 
 * [npm](https://www.npmjs.com/)
 * [gulp](https://gulpjs.com/)
 * [git](https://git-scm.com/)
