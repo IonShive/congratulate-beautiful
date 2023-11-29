@@ -2,8 +2,10 @@
 
 **Training project for layout practice**
 
+- [DEMO LINK](https://ionshive.github.io/congratulate-beautifully)
+
 ## Requirements:
-* [Node.js](https://nodejs.org/en/) version 14.15.1
+* [Node.js](https://nodejs.org/en/) [version 14.15.1]
 * [npm](https://www.npmjs.com/)
 * [gulp](https://gulpjs.com/)
 * [git](https://git-scm.com/)
@@ -30,9 +32,3 @@
 | [Fancybox](https://fancyapps.com/) |FancyBox is a jQuery plugin for creating photo galleries and displaying other content in beautiful modals. |
 | [Jquery Validation](https://jqueryvalidation.org) |This jQuery plugin makes simple clientside form validation easy, whilst still offering plenty of customization options. |
 | [Slick slider](https://kenwheeler.github.io/slick/) | Slick slider is a jQuery plugin for quickly creating a responsive slider of any complexity on your website. Its functionality allows you to implement looping, autoplay, transition effects and much more. Separately, I will highlight the ability to swipe the slider with your finger on devices with a touch screen. |
-
-## Contact author:
-**Vladislav Balaban**
-  - [Telegram](https://t.me/vlad_balaban2021)
-  - [Gmail](mailto:vlad.balaban2020@mail.com)
-  - [Github](https://github.com/IonShive)
